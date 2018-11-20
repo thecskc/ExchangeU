@@ -1,0 +1,26 @@
+{
+  "name": "exchangeu",
+  "version": "1.0.0",
+  "description": "On-demand peer to peer assignment help within universities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cskc97/ExchangeU.git"
+  },
+  "author": "cskc97",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cskc97/ExchangeU/issues"
+  },
+  "homepage": "https://github.com/cskc97/ExchangeU#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "firebase": "^5.5.8",
+    "firebaseui": "^3.4.1",
+    "hbs": "^4.0.1",
+    "swot-simple": "^1.0.0"
+  }
+}
