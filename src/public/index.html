@@ -6,15 +6,7 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
 <script>
   // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyA6nNJCJkQVP1j8uZgx_0OgpIQ-5zEJGzY",
-    authDomain: "exchange-69a66.firebaseapp.com",
-    databaseURL: "https://exchange-69a66.firebaseio.com",
-    projectId: "exchange-69a66",
-    storageBucket: "exchange-69a66.appspot.com",
-    messagingSenderId: "51757558377"
-  };
-  firebase.initializeApp(config);
+
 </script>
 <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
 <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
@@ -31,6 +23,7 @@
 <body>
     <div id="firebaseui-auth-container"></div>
     <div id="loader">Loading...</div>
+    <script src="../scripts/config.js"></script>
     <script>
 
     let ui = new firebaseui.auth.AuthUI(firebase.auth());
@@ -54,7 +47,6 @@
       signInSuccessUrl: '/home',
       signInOptions: [
         // Leave the lines as is for the providers you want to offer your users.
-        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         firebase.auth.EmailAuthProvider.PROVIDER_ID
       ],
       // Terms of service url.
