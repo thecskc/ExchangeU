@@ -1,11 +1,15 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const port = 3000;
+const PORT =  process.env.PORT || 3000;
 
 const publicPath = path.resolve(__dirname, "public");
 app.set("view engine","hbs");
 app.use(express.static(publicPath));
+app.use("/lib", express.static(__dirname + '/lib'));
+app.use("/scripts", express.static(__dirname + '/scripts'));
+
+
 app.use(express.urlencoded({extended:false}));
 
 app.use(function(req,res,next){
@@ -19,14 +23,12 @@ app.use(function(req,res,next){
 
 });
 
-app.get("/",(req,res)=>{
-    res.redirect("/home");
-});
-
-app.get("/home",(req,res)=>{
+app.get("/home",(req,res) => {
     res.render("home");
 });
 
 
 
-app.listen(3000);
+app.listen(3000, () => {
+    console.log(`Listening on port ${PORT}`);
+});
