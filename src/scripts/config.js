@@ -1,9 +1,10 @@
-var config = {
-    apiKey: "AIzaSyA6nNJCJkQVP1j8uZgx_0OgpIQ-5zEJGzY",
-    authDomain: "exchange-69a66.firebaseapp.com",
-    databaseURL: "https://exchange-69a66.firebaseio.com",
-    projectId: "exchange-69a66",
-    storageBucket: "exchange-69a66.appspot.com",
-    messagingSenderId: "51757558377"
-  };
-  firebase.initializeApp(config);
+const config = {
+    apiKey: "AIzaSyAMwplyyji6P0u3Q_mTAOtTtaHK8ugZi6A",
+    authDomain: "exchangeuni.firebaseapp.com",
+    databaseURL: "https://exchangeuni.firebaseio.com",
+    projectId: "exchangeuni",
+    storageBucket: "exchangeuni.appspot.com",
+    messagingSenderId: "525209608156"
+};
+
+firebase.initializeApp(config);

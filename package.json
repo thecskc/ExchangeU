@@ -18,7 +18,8 @@
   "homepage": "https://github.com/cskc97/ExchangeU#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "firebase": "^5.5.8",
+    "firebase": "^5.6.0",
+    "firebase-admin": "^6.3.0",
     "firebaseui": "^3.4.1",
     "hbs": "^4.0.1",
     "swot-simple": "^1.0.0"

@@ -1,6 +1,18 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+
+const admin = require('firebase-admin');
+
+const pathToServiceAcc = path.join(__dirname,"/serviceaccountcred.json");
+const serviceAccount = require(pathToServiceAcc);
+
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: 'https://exchangeuni.firebaseio.com'
+});
+
+
 const PORT =  process.env.PORT || 3000;
 
 const publicPath = path.resolve(__dirname, "public");
@@ -24,7 +36,15 @@ app.use(function(req,res,next){
 });
 
 app.get("/home",(req,res) => {
-    res.render("home");
+
+    admin.auth().getUser(uid).then(function(userRecord){
+        console.log(userRecord);
+        res.render("home");
+    })
+        .catch(function(error){
+            console.log(error);
+        });
+
 });
 
 
