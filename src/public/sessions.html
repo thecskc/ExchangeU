@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sessions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Assignment Details</h4>
+      <div class="row">
+        <form class="col s12">
+        <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="assignment-topic" type="text" class="">
+          <label for="assignment_topic">Assignment Topic</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+          <textarea id="description" class="materialize-textarea"></textarea>
+          <label for="textarea1">Assignment Description</label>
+        </div>
+      </div>
+    </form>
+    </div>
+    <div class="modal-footer">
+      <button class=" modal-action modal-close waves-effect waves-green btn-flat" type="submit" name="action" id="submit-btn">Submit</button>
+    </div>
+  </div>
+  </div>
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right">Logo</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="badges.html">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+    <ul class="collection with-header">
+        <li class="collection-header"><h4>Session History</h4></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+      </ul>
+      <a class="waves-effect waves-light btn modal-trigger" id="request-session" href="#modal1">Request Session</a>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <script>
+    $( document ).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+
+  });
+  </script>
+  <script src="sessions.js"></script>
+</body>
+</html>

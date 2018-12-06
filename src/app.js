@@ -1,6 +1,11 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-const path = require("path");
+const path = require('path');
+const bodyParser = require('body-parser');
+
+// routes for api
+const api = require('./routes/api.js');
+
 
 const admin = require('firebase-admin');
 
@@ -21,8 +26,10 @@ app.use(express.static(publicPath));
 app.use("/lib", express.static(__dirname + '/lib'));
 app.use("/scripts", express.static(__dirname + '/scripts'));
 
-
+app.use(bodyParser.json({ limit: '50mb' }));
 app.use(express.urlencoded({extended:false}));
+
+app.use('/api', api);
 
 app.use(function(req,res,next){
 
@@ -35,15 +42,8 @@ app.use(function(req,res,next){
 
 });
 
-app.get("/home",(req,res) => {
+app.get('/',(req,res) => {
 
-    admin.auth().getUser(uid).then(function(userRecord){
-        console.log(userRecord);
-        res.render("home");
-    })
-        .catch(function(error){
-            console.log(error);
-        });
 
 });
 
