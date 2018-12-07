@@ -14,6 +14,9 @@ exports.session_create_assignment = (req, res) => {
 
     let topic = req.body.topic;
     let description = req.body.description;
+    let date = req.body.date;
+    let links = req.body.links;
+    let uid = req.body.uid;
 
     let responseObj = {
         "success" : "ok"

@@ -17,7 +17,7 @@
         <form class="col s12">
         <div class="row">
         <div class="input-field col s12">
-          <input placeholder="Placeholder" id="assignment-topic" type="text" class="">
+          <input placeholder="Math" id="assignment-topic" type="text" class="">
           <label for="assignment_topic">Assignment Topic</label>
         </div>
     </div>
@@ -27,6 +27,17 @@
           <label for="textarea1">Assignment Description</label>
         </div>
       </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="assignment-links" class="materialize-textarea"></textarea>
+          <label for="textarea1">Paste links to accompanying files(separate with semi-colons)</label>
+        </div>
+      </div>
+       <div class="row">
+        <div class="input-field col s12">
+            <input type="text" class="datepicker" id="date-picker" placeholder="Assignment date">
+        </div>
+    </div>
     </form>
     </div>
     <div class="modal-footer">
@@ -65,6 +76,8 @@
     $( document ).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal').modal();
+    $('.datepicker').datepicker();
+
 
   });
   </script>
