@@ -3,8 +3,6 @@ const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
 
-// routes for api
-const api = require('./routes/api.js');
 
 
 const admin = require('firebase-admin');
@@ -16,6 +14,9 @@ admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL: 'https://exchangeuni.firebaseio.com'
 });
+
+// routes for api
+const api = require('./routes/api.js');
 
 
 const PORT =  process.env.PORT || 3000;
