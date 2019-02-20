@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 
-import LoginForm from "./components/LoginForm";
-import "./App.css";
+import Coach from "./components/Coach";
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {};
+  }
   render() {
-    return <LoginForm />;
+    return <Coach />;
   }
 }
 
