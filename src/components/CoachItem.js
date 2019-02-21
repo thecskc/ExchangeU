@@ -20,9 +20,10 @@ export default class CoachItem extends React.Component {
         <img src={profileImage} style={{ margin: 16 }} alt="Avatar" />
         <div className="container">
           <h4>
-            <b>John Doe</b>
+            <b>{this.props.name}</b>
           </h4>
           <p>Software Engineer</p>
+          <p>{this.props.company}</p>
           <button className="button" onClick={this.handleClick}>
             <span>Book now </span>
           </button>

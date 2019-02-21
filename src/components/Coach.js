@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import CoachItem from "./CoachItem";
-import Navbar from "./Navbar";
+import CoachesData from "./CoachesData";
 
 class Coach extends Component {
   constructor() {
@@ -11,14 +11,14 @@ class Coach extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <CoachItem />
-        <CoachItem />
-        <CoachItem />
-        <CoachItem />
-      </div>
-    );
+    const coachesComponents = CoachesData.map(coach => (
+      <CoachItem
+        key={coach.id}
+        name={coach.firstName}
+        company={coach.company}
+      />
+    ));
+    return <div>{coachesComponents}</div>;
   }
 }
 
