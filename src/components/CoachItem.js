@@ -12,7 +12,7 @@ export default class CoachItem extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(event) {}
+  handleClick() {}
 
   render() {
     return (
