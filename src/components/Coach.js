@@ -18,6 +18,7 @@ class Coach extends Component {
         company={coach.company}
         experience={coach.experience}
         rate={coach.ratePerHour}
+        id={coach.id}
       />
     ));
     return <div>{coachesComponents}</div>;

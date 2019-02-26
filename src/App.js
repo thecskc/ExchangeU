@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link, Router } from "@reach/router";
 
 import Coach from "./components/Coach";
 import Form from "./components/FormContainer";
@@ -8,7 +9,14 @@ class App extends Component {
     super();
   }
   render() {
-    return <Coach />;
+    return (
+      <div>
+        <Router>
+          <Coach path="/" />
+          <Form path="/appointment-form/:coachId" />
+        </Router>
+      </div>
+    );
   }
 }
 

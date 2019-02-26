@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "@reach/router";
 
 import "./CoachItem.css";
 import profileImage from "../assets/user.png";
@@ -41,10 +42,12 @@ export default class CoachItem extends React.Component {
           <p> {`Experience of ${this.props.experience} years`}</p>
           <p style={{ marginBottom: 16 }}>{`Charges ${
             this.props.rate
-          } per hour`}</p>
-          <button className="button" onClick={this.handleClick}>
-            <span>Book now </span>
-          </button>
+          }$ per hour`}</p>
+          <Link to={`appointment-form/${this.props.id}`}>
+            <button className="button" onClick={this.handleClick}>
+              <span>Book now </span>
+            </button>
+          </Link>
         </div>
       </div>
     );
