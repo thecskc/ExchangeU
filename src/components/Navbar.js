@@ -10,15 +10,13 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <div>
-        <nav>
-          <ul>
-            <li>>Home</li>
-            <li>News</li>
-            <li>Contact</li>
-            <li>About</li>
-          </ul>
-        </nav>
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">
+          Home
+        </a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
       </div>
     );
   }

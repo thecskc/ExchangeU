@@ -5,6 +5,7 @@ const CoachesData = [
     location: "US",
     ratePerHour: 70,
     experience: 3,
+    img: "microsoft",
     id: 1
   },
   {
@@ -13,6 +14,7 @@ const CoachesData = [
     location: "US",
     ratePerHour: 65,
     experience: 2,
+    img: "bloomberg",
     id: 2
   },
   {
@@ -21,6 +23,7 @@ const CoachesData = [
     location: "US",
     ratePerHour: 70,
     experience: 2,
+    img: "uber",
     id: 3
   },
   {
@@ -29,6 +32,7 @@ const CoachesData = [
     location: "",
     ratePerHour: 60,
     experience: 1,
+    img: "morgan-stanley",
     id: 4
   },
   {
@@ -37,6 +41,7 @@ const CoachesData = [
     location: "Los Angeles",
     ratePerHour: 120,
     experience: 3,
+    img: "google",
     id: 5
   },
   {
@@ -45,6 +50,7 @@ const CoachesData = [
     location: "Bangalore",
     ratePerHour: 100,
     experience: 4.5,
+    img: "google",
     id: 6
   },
   {
@@ -53,6 +59,7 @@ const CoachesData = [
     location: "",
     ratePerHour: 50,
     experience: 1,
+    img: "bank-of-america",
     id: 7
   },
   {
@@ -61,6 +68,7 @@ const CoachesData = [
     location: "New York City",
     ratePerHour: 120,
     experience: 3.5,
+    img: "google",
     id: 8
   }
 ];

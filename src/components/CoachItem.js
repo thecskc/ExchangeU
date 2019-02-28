@@ -2,7 +2,18 @@ import React from "react";
 import { Link } from "@reach/router";
 
 import "./CoachItem.css";
-import profileImage from "../assets/user.png";
+
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => {
+    images[item.replace("./", "")] = r(item);
+  });
+  return images;
+}
+
+const images = importAll(
+  require.context("../assets/", false, /\.(png|jpe?g|svg)$/)
+);
 
 const fetaureTagStyles = {
   position: "absolute",
@@ -32,7 +43,11 @@ export default class CoachItem extends React.Component {
         <div style={fetaureTagStyles}>
           <span>Featured ☆</span>
         </div>
-        <img src={profileImage} style={{ margin: 16 }} alt="Avatar" />
+        <img
+          src={images[`${this.props.img}.png`]}
+          style={{ margin: 16 }}
+          alt={this.props.img}
+        />
         <div className="container">
           <h4>
             <b>{this.props.name}</b>

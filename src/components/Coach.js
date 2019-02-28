@@ -12,16 +12,9 @@ class Coach extends Component {
 
   render() {
     const coachesComponents = CoachesData.map(coach => (
-      <CoachItem
-        key={coach.id}
-        name={coach.firstName}
-        company={coach.company}
-        experience={coach.experience}
-        rate={coach.ratePerHour}
-        id={coach.id}
-      />
+      <CoachItem key={coach.id} {...coach} />
     ));
-    return <div>{coachesComponents}</div>;
+    return <div style={{ marginTop: 16 }}>{coachesComponents}</div>;
   }
 }
 
