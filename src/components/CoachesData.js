@@ -32,7 +32,7 @@ const CoachesData = [
     location: "",
     ratePerHour: 60,
     experience: 1,
-    img: "morgan-stanley",
+    img: "morgan_stanley",
     id: 4
   },
   {
@@ -59,7 +59,7 @@ const CoachesData = [
     location: "",
     ratePerHour: 50,
     experience: 1,
-    img: "bank-of-america",
+    img: "bank_of_america",
     id: 7
   },
   {

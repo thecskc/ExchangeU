@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SweetAlert from "react-bootstrap-sweetalert";
 
 import FormComponent from "./FormComponent";
 
@@ -13,7 +14,8 @@ class Form extends Component {
       firstName: "",
       lastName: "",
       email: "",
-      phoneNumber: undefined
+      phoneNumber: undefined,
+      confirmMessage: false
     };
   }
 
@@ -26,15 +28,29 @@ class Form extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    this.setState({ confirmMessage: true });
   }
+
+  hideAlert = () => {
+    this.setState({ confirmMessage: false });
+  };
 
   render() {
     return (
-      <FormComponent
-        {...this.state} // sending properties of state using spread operator
-        handleChange={this.handleChange}
-        handleSubmit={this.handleSubmit}
-      />
+      <div>
+        <FormComponent
+          {...this.state} // sending properties of state using spread operator
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+        />
+        {this.state.confirmMessage ? (
+          <SweetAlert title="Success" onConfirm={this.hideAlert}>
+            Your request has been submitted!
+          </SweetAlert>
+        ) : (
+          ""
+        )}
+      </div>
     );
   }
 }

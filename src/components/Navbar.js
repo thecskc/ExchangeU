@@ -1,6 +1,8 @@
 import React from "react";
+import { Link, Router } from "@reach/router";
 
 import "./Navbar.css";
+import Logo from "../assets/logo.jpg";
 
 class Navbar extends React.Component {
   constructor() {
@@ -11,12 +13,10 @@ class Navbar extends React.Component {
   render() {
     return (
       <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">
-          Home
-        </a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a class="active">Home</a>
+        <a>Contact</a>
+        <a>About</a>
+        <img src={Logo} alt="Company logo" />
       </div>
     );
   }

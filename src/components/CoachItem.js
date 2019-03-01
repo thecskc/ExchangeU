@@ -45,18 +45,18 @@ export default class CoachItem extends React.Component {
         </div>
         <img
           src={images[`${this.props.img}.png`]}
-          style={{ margin: 16 }}
+          style={{ margin: 16, height: 64, width: 64 }}
           alt={this.props.img}
         />
         <div className="container">
           <h4>
-            <b>{this.props.name}</b>
+            <b>{this.props.firstName}</b>
           </h4>
           <p style={{ marginTop: 16 }}>Software Engineer</p>
           <p>{this.props.company}</p>
           <p> {`Experience of ${this.props.experience} years`}</p>
           <p style={{ marginBottom: 16 }}>{`Charges ${
-            this.props.rate
+            this.props.ratePerHour
           }$ per hour`}</p>
           <Link to={`appointment-form/${this.props.id}`}>
             <button className="button" onClick={this.handleClick}>

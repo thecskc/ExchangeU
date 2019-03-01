@@ -14,7 +14,14 @@ class Coach extends Component {
     const coachesComponents = CoachesData.map(coach => (
       <CoachItem key={coach.id} {...coach} />
     ));
-    return <div style={{ marginTop: 16 }}>{coachesComponents}</div>;
+    return (
+      <div style={{ marginTop: 16 }}>
+        <h1 style={{ textAlign: "center", marginBottom: 8 }}>
+          Browse our Coaches
+        </h1>
+        {coachesComponents}
+      </div>
+    );
   }
 }
 
