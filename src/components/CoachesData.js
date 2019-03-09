@@ -70,7 +70,56 @@ const CoachesData = [
     experience: 3.5,
     img: "google",
     id: 8
-  }
+  },
+  {
+    firstName: "EP",
+    company: "Google",
+    location: "NorCal",
+    ratePerHour: 120,
+    experience: 2,
+    img: "google",
+    id: 8
+  },{
+    firstName: "Rashi",
+    company: "Google",
+    location: "India",
+    ratePerHour: 60,
+    experience: 2,
+    img: "google",
+    id: 8
+  },{
+    firstName: "Vikrant",
+    company: "Morgan Stanley",
+    location: "New York City",
+    ratePerHour: 50,
+    experience: 1,
+    img: "morgan_stanley",
+    id: 8
+  },{
+    firstName: "Amit",
+    company: "Goldman Sachs",
+    location: "New York City",
+    ratePerHour: 60,
+    experience: 5,
+    img: "",
+    id: 8
+  },{
+    firstName: "AK",
+    company: "Google",
+    location: "New York City",
+    ratePerHour: 70,
+    experience: 3,
+    img: "google",
+    id: 8
+  },
+  {
+    firstName: "AH",
+    company: "VA",
+    ratePerHour: 150,
+    experience: 8,
+    img: "",
+    id: 8
+  },
 ];
 
 export default CoachesData;
