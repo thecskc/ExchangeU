@@ -14,9 +14,7 @@ class Navbar extends React.Component {
         <nav>
           <ul>
             <li>>Home</li>
-            <li>News</li>
-            <li>Contact</li>
-            <li>About</li>
+            
           </ul>
         </nav>
       </div>
