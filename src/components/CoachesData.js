@@ -101,7 +101,7 @@ const CoachesData = [
     location: "New York City",
     ratePerHour: 60,
     experience: 5,
-    img: "",
+    img: "goldman_sachs",
     id: 8
   },{
     firstName: "AK",
@@ -117,7 +117,7 @@ const CoachesData = [
     company: "VA",
     ratePerHour: 150,
     experience: 8,
-    img: "",
+    img: "google",
     id: 8
   },
 ];
