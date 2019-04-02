@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import CoachItem from "./CoachItem";
 import CoachesData from "./CoachesData";
+import Grid from "@material-ui/core/Grid/Grid";
+import Typography from "@material-ui/core/Typography/Typography";
 
 class Coach extends Component {
   constructor() {
@@ -15,12 +17,23 @@ class Coach extends Component {
       <CoachItem key={coach.id} {...coach} />
     ));
     return (
-      <div style={{ marginTop: 16 }}>
-        <h1 style={{ textAlign: "center", marginBottom: 8 }}>
-          Browse our Coaches
-        </h1>
-        {coachesComponents}
-      </div>
+
+
+        <Grid container spacing={24}>
+
+            <Typography component="h3" variant="h3" textAlign="center">
+                    Choose a Coach!
+            </Typography>
+
+
+            <Grid container spacing={24}>
+                {coachesComponents}
+            </Grid>
+
+        </Grid>
+
+
+
     );
   }
 }

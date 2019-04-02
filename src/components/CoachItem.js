@@ -2,6 +2,15 @@ import React from "react";
 import { Link } from "@reach/router";
 
 import "./CoachItem.css";
+import Card from "@material-ui/core/Card/Card";
+import CardActionArea from "@material-ui/core/CardActionArea/CardActionArea";
+import CardMedia from "@material-ui/core/CardMedia/CardMedia";
+import CardContent from "@material-ui/core/CardContent/CardContent";
+import Typography from "@material-ui/core/Typography/Typography";
+import Button from "@material-ui/core/Button/Button";
+import CardActions from "@material-ui/core/CardActions/CardActions";
+import withStyles from "@material-ui/core/es/styles/withStyles";
+import Grid from "@material-ui/core/Grid/Grid";
 
 function importAll(r) {
   let images = {};
@@ -11,24 +20,20 @@ function importAll(r) {
   return images;
 }
 
+const style = {
+
+
+};
+
+
 const images = importAll(
   require.context("../assets/", false, /\.(png|jpe?g|svg)$/)
 );
 
-const fetaureTagStyles = {
-  position: "absolute",
-  top: 0,
-  right: 0,
-  marginRight: 12,
-  marginTop: 12,
-  background: "purple",
-  color: "white",
-  padding: 8
-};
 
-export default class CoachItem extends React.Component {
+class CoachItem extends React.Component {
   constructor(props) {
-    super();
+    super(props);
 
     this.state = {};
 
@@ -39,32 +44,41 @@ export default class CoachItem extends React.Component {
 
   render() {
     return (
-      <div className="card" style={{ position: "relative" }}>
-        <div style={fetaureTagStyles}>
-          <span>Featured ☆</span>
-        </div>
-        <img
-          src={images[`${this.props.img}.png`]}
-          style={{ margin: 16, height: 64, width: 64 }}
-          alt={this.props.img}
-        />
-        <div className="container">
-          <h4>
-            <b>{this.props.firstName}</b>
-          </h4>
-          <p style={{ marginTop: 16 }}>Software Engineer</p>
-          <p>{this.props.company}</p>
-          <p> {`Experience of ${this.props.experience} years`}</p>
-          <p style={{ marginBottom: 16 }}>{`Charges ${
-            this.props.ratePerHour
-          }$ per hour`}</p>
-          <Link to={`appointment-form/${this.props.id}`}>
-            <button className="button" onClick={this.handleClick}>
-              <span>Book now </span>
-            </button>
-          </Link>
-        </div>
-      </div>
+
+        <Grid item xs={4} m={4}>
+
+        <Card>
+            <CardActionArea>
+                <CardMedia
+                    component="img"
+                    alt="Coach Company"
+                    height="140"
+                    image="/static/images/cards/contemplative-reptile.jpg"
+                    title="Contemplative Reptile"
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="h2">
+                        Lizard
+                    </Typography>
+                    <Typography component="p">
+                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                        across all continents except Antarctica
+                    </Typography>
+                </CardContent>
+            </CardActionArea>
+            <CardActions>
+                <Button size="small" color="primary">
+                    Share
+                </Button>
+                <Button size="small" color="primary">
+                    Learn More
+                </Button>
+            </CardActions>
+        </Card>
+
+        </Grid>
     );
   }
 }
+
+export default withStyles(style)(CoachItem);
