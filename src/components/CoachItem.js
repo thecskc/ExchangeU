@@ -43,6 +43,10 @@ class CoachItem extends React.Component {
   handleClick() {}
 
   render() {
+
+      const title = `${this.props.firstName} from ${this.props.company}, ${this.props.location}`;
+      const price = `$${this.props.ratePerHour}/session`
+
     return (
 
         <Grid item xs={4} m={4}>
@@ -50,15 +54,18 @@ class CoachItem extends React.Component {
         <Card>
             <CardActionArea>
                 <CardMedia
-                    component="img"
+                    component={this.props.img+".png"}
                     alt="Coach Company"
                     height="140"
                     image="/static/images/cards/contemplative-reptile.jpg"
                     title="Contemplative Reptile"
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        Lizard
+                    <Typography gutterBottom variant="h5">
+                        {title}
+                    </Typography>
+                    <Typography gutterBottom variant="subtitle1">
+                        {price}
                     </Typography>
                     <Typography component="p">
                         Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging

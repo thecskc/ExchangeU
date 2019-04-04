@@ -6,8 +6,8 @@ import Grid from "@material-ui/core/Grid/Grid";
 import Typography from "@material-ui/core/Typography/Typography";
 
 class Coach extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {};
   }
