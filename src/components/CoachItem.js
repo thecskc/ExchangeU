@@ -11,6 +11,7 @@ import Button from "@material-ui/core/Button/Button";
 import CardActions from "@material-ui/core/CardActions/CardActions";
 import withStyles from "@material-ui/core/es/styles/withStyles";
 import Grid from "@material-ui/core/Grid/Grid";
+import createStyles from "@material-ui/core/es/styles/createStyles";
 
 function importAll(r) {
   let images = {};
@@ -20,11 +21,13 @@ function importAll(r) {
   return images;
 }
 
-const style = {
-
-
-};
-
+const style = (theme) =>
+    createStyles({
+        card: {
+            //width: "200px",
+            height: "75vh"
+        }
+    });
 
 const images = importAll(
   require.context("../assets/", false, /\.(png|jpe?g|svg)$/)
@@ -45,19 +48,20 @@ class CoachItem extends React.Component {
   render() {
 
       const title = `${this.props.firstName} from ${this.props.company}, ${this.props.location}`;
-      const price = `$${this.props.ratePerHour}/session`
+      const price = `$${this.props.ratePerHour}/session`;
+      const imagePath = `../assets/${this.props.img}`;
 
     return (
 
         <Grid item xs={4} m={4}>
 
-        <Card>
+        <Card className={this.props.classes.card}>
             <CardActionArea>
                 <CardMedia
-                    component={this.props.img+".png"}
+                    component= "img"
                     alt="Coach Company"
                     height="140"
-                    image="/static/images/cards/contemplative-reptile.jpg"
+                    image= {imagePath}
                     title="Contemplative Reptile"
                 />
                 <CardContent>
@@ -68,8 +72,7 @@ class CoachItem extends React.Component {
                         {price}
                     </Typography>
                     <Typography component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
+                        {this.props.bio}
                     </Typography>
                 </CardContent>
             </CardActionArea>

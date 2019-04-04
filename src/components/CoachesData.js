@@ -137,21 +137,7 @@ const CoachesData = [
             "\n" +
             "During my career I have experienced varieties of interviews at varieties of companies. Some of them invited me for a 1:1 session with their CTO after onsite, and treated me with a nice dinner of course ; )  Some of them interviewed me for roles from hands-on engineer to VP in one single onsite day. And some of them just asked me to implement a mobile game and bring to their office, play with their engineering team members.   \n" +
             "\n" +
-            "I have been helping candidates with tech interviews on schedule in a few weeks, or sometimes in a few days to improve, and get their offers. Here are some testimonies: \n" +
-            "Hello Di\n" +
-            "Thank you very much for yesterday's mock interview and the valuable feedback.\n" +
-            "It was really helpful for me to prepare for the real interview this week.\n" +
-            "-B***\n" +
-            "\n" +
-            "We started with discussing an easy problem followed by moderate follow up.\n" +
-            "However Di gave very accurate feedback about my behavior and I understood what is my main weakness.\n" +
-            "Di also made very good points about the interview process in general (that I payed not enough attention before)\n" +
-            "-Z******\n" +
-            "\n" +
-            "This written feedback is wonderful! Thanks so much for doing the interview and writing the feedback. This has been tremendously helpful for me and it’s totally worth the price. I’m going to take your advice and practice some basic coding problems like reverse linkedlist, quick sort, and binary search etc.\n" +
-            "-D**",
-        isa: true,
-        id: 12
+            "I have been helping candidates with tech interviews on schedule in a few weeks, or sometimes in a few days to improve, and get their offers."
     },
     {
         firstName: "HV",
