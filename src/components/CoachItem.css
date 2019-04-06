@@ -5,6 +5,7 @@ body {
 
 .card {
     /* Add shadows to create the "card" effect */
+    width: 40%;
     display: block;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -23,6 +24,7 @@ body {
 
 
 .button {
+
     display: inline-block;
     border-radius: 4px;
     background-color: #f4511e;
@@ -64,10 +66,30 @@ body {
     right: 0;
 }
 
+.bio{
+  height: 250px;
+}
+
 /* ====================== Break Points ====================== */
-@media screen and (min-width: 650px) {
+
+@media screen and (max-width: 768px) {
     .card {
-        width: 650px;
-        margin: auto;
+        width: 100%;
+        padding: 40px;
+    }
+
+    .bio:{
+      height: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .bio:{
+      height: 100%;
     }
 }

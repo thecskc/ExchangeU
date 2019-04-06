@@ -64,11 +64,11 @@ export default class CoachItem extends React.Component {
                     {/*<p style={{marginTop: 16}}>Software Engineer</p>*/}
                     <h5>{this.props.company}</h5>
                     <h5> {`${this.props.experience} year(s) of experience`}</h5>
-                    <h4 style={{marginBottom: 16}}>{`Charges ${
+                    <h4 style={{marginBottom: 25}}>{`Charges ${
                         this.props.ratePerHour
                         }$ per hour`}</h4>
 
-                    <p>{this.props.bio}</p>
+                    <p className="bio">{this.props.bio}</p>
 
                     <Link to={`appointment-form/${this.props.id}`}>
                         <button className="button" onClick={this.handleClick}>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import CoachItem from "./CoachItem";
+import "./Coach.css";
 import CoachesData from "./CoachesData";
 
 class Coach extends Component {
@@ -21,7 +22,10 @@ class Coach extends Component {
         <h1 style={{ textAlign: "center", marginBottom: 8 }}>
           Browse our Coaches
         </h1>
-        {coachesComponents}
+
+        <div className="container">
+          {coachesComponents}
+        </div>
       </div>
     );
   }
