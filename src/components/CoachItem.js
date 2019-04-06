@@ -39,35 +39,43 @@ export default class CoachItem extends React.Component {
     }
 
     render() {
+
+        let divElem;
+        if(this.props.isa){
+            divElem = <div style={fetaureTagStyles}> Income Sharing Agreement ☆</div>;
+        }
+        else{
+            divElem=  <div></div>
+        }
+
         return (
-            <div className="card" style={{position: "relative"}}>
-                <div style={fetaureTagStyles}>
-                    <span>Income Sharing Agreement ☆</span>
-                </div>
+            <div className="card" style={{position:"relative"}}>
+
+                {divElem}
                 <img
                     src={images[`${this.props.img}.png`]}
                     style={{margin: 16, height: 64, width: 64}}
                     alt={this.props.img}
                 />
-                <div className="container">
+
                     <h3>
                         <b>{this.props.firstName}</b>
                     </h3>
-                    <p style={{marginTop: 16}}>Software Engineer</p>
+                    {/*<p style={{marginTop: 16}}>Software Engineer</p>*/}
                     <h5>{this.props.company}</h5>
                     <h5> {`${this.props.experience} year(s) of experience`}</h5>
                     <h4 style={{marginBottom: 16}}>{`Charges ${
                         this.props.ratePerHour
                         }$ per hour`}</h4>
-                    <hr/>
+
                     <p>{this.props.bio}</p>
-                    <hr/>
+
                     <Link to={`appointment-form/${this.props.id}`}>
                         <button className="button" onClick={this.handleClick}>
                             <span>Book now </span>
                         </button>
                     </Link>
-                </div>
+
             </div>
         );
     }

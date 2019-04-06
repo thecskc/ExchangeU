@@ -12,8 +12,8 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <div class="topnav" id="myTopnav">
-        <a class="active">Home</a>
+      <div className="topnav" id="myTopnav">
+        <a className="active">Home</a>
        
         <img src={Logo} alt="Company logo" />
       </div>
