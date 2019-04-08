@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@reach/router": "^1.2.1",
+    "emailjs": "^2.2.0",
     "emailjs-com": "^2.3.2",
     "react": "^16.8.2",
     "react-bootstrap-sweetalert": "^4.4.1",
