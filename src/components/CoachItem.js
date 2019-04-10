@@ -45,7 +45,7 @@ export default class CoachItem extends React.Component {
     if (this.props.isa) {
       divElem = <div style={fetaureTagStyles}> Income Sharing Agreement ☆</div>;
       btnContainer = (
-        <div>
+        <div className="btn-container">
           <Link to={`appointment-form/${this.props.id}`}>
             <button className="button" onClick={this.handleClick}>
               <span>Book session </span>
@@ -61,11 +61,13 @@ export default class CoachItem extends React.Component {
     } else {
       divElem = <div />;
       btnContainer = (
-        <Link to={`appointment-form/${this.props.id}`}>
-          <button className="button" onClick={this.handleClick}>
-            <span>Book session </span>
-          </button>
-        </Link>
+        <div className="btn-container">
+          <Link to={`appointment-form/${this.props.id}`}>
+            <button className="button" onClick={this.handleClick}>
+              <span>Book session </span>
+            </button>
+          </Link>
+        </div>
       );
     }
 
