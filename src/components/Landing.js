@@ -25,7 +25,7 @@ class Landing extends Component {
           <br />
           <br />
           <Link className="landing-hero-item-header" to="/coaches">
-            <button class="btn-gradient yellow">Browse coaches </button>
+            <button class="btn-gradient yellow large">Browse coaches </button>
           </Link>
         </div>
 
@@ -104,25 +104,77 @@ class Landing extends Component {
           <br />
         </div>
 
-        <div className="landing-testimonials">
+        <div>
           <br />
           <br />
-
           <h1
             className="landing-hero-item-header"
             style={{
               color: "black",
-              width: "100%",
               height: "25vh",
               alignSelf: "center"
             }}
           >
             WORKS?
           </h1>
-          <br />
-
-          <div className="landing-testimonial-card">WORKS?</div>
+          <div className="landing-testimonials">
+            <div className="landing-testimonial-card">
+              Overall I found my Exchange experience very helpful and
+              encouraging. My coach was excellent, he identified my strengths
+              and weaknesses correctly. He also suggested hints during the
+              interview which steered me in the right direction. The problems
+              were also well chosen to determine my skill level. I would
+              recommend him to others and I got a lot out of just one session. -
+              Mo
+            </div>
+            <div className="landing-testimonial-card">
+              I would give my coach a 4.75/5. He was very good at making sure
+              each interview was scheduled according to my needs, and I felt
+              much more confident in my interview. In the short amount of time
+              we had, we were able to work through a good amount of problems,
+              and he chose the ones that exercised my abilities for thinking
+              problems through. I would use Exchange again, and I would
+              definitely recommend it to a friend. Jev’s Exchange
+            </div>
+            <div className="landing-testimonial-card">
+              My coach was very attentive to what I needed. I really needed some
+              extra resources to prepare for my upcoming interviews, so I
+              contacted Exchange for more info. The founders of Exchange
+              connected me with a Google coach, which was pretty awesome because
+              he prepared me more thoroughly than my friends, clubs, or
+              interview prep books did. I felt very confident going into my
+              phone interviews and I'm certain I moved onto the next round. For
+              me, using Exchange was all about increasing my chances and
+              Exchange helped alot with that. Hsiang’s Experience
+            </div>
+            <div className="landing-testimonial-card">
+              I read a lot of books such as CTCI but I was not able to get to
+              the level needed to solve some hard Leetcode problems. I met with
+              my coach over a month and I am now able to handle the hard
+              Leetcode problems much better than I was able to before. Moon’s
+              Exchange
+            </div>
+            <div className="landing-testimonial-card">
+              My 3 sessions with my technical interview coach Kim were great! We
+              talked about Uber and his role there and how he prepared for his
+              interview. He was able to understand that I lagged in topics like
+              DP and Graphs. So we spent a lot of time working on those areas.
+              Now, I feel confident about my onsite interview in two weeks!
+              Daniel’s Exchange
+            </div>
+          </div>
         </div>
+        <footer>
+          <p
+            style={{
+              color: "white",
+              textAlign: "center",
+              verticalAlign: "middle"
+            }}
+          >
+            © 2019 Exchange. All rights reserved.
+          </p>
+        </footer>
       </div>
     );
   }
