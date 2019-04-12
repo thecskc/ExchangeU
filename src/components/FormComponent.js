@@ -6,8 +6,6 @@ import Navbar from "./Navbar";
 function FormComponent(props) {
     return (
         <div>
-            <Navbar/>
-
             <form id="form" onSubmit={props.handleSubmit}>
                 <h1 className="fs-title">Book an Appointment</h1>
                 {/* <h2 className="fs-subtitle"> John Doe</h2> */}
