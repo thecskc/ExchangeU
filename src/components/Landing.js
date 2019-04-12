@@ -25,7 +25,7 @@ class Landing extends Component {
                     <br/>
                     <br/>
                     <Link className="landing-hero-item-header btn-gradient yellow large" to="/coaches">
-                        Browse Coaches
+                        <h3 className="landing-her-item-header">Browse Coaches</h3>
                     </Link>
                 </div>
 
@@ -186,17 +186,7 @@ class Landing extends Component {
 
                     </div>
                 </div>
-                <footer>
-                    <p
-                        style={{
-                            color: "white",
-                            textAlign: "center",
-                            verticalAlign: "middle"
-                        }}
-                    >
-                        © 2019 Exchange. All rights reserved.
-                    </p>
-                </footer>
+
             </div>
         );
     }

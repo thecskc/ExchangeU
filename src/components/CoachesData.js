@@ -132,6 +132,8 @@ const CoachesData = [
         location: "San Bruno, US",
         ratePerHour: 120,
         experience: 8,
+        id:12,
+        isa:true,
         img: "google",
         bio: "Hi I am Di Wang, pronoused as \"The One\" in English. I am have been working at Google for almost 3 years and currently active interviewer for onsite candidates, while I have been in the industry for almost 9 years.  \n" +
             "\n" +
@@ -151,6 +153,19 @@ const CoachesData = [
         isa: true,
         id: 13
     },
+    {
+        firstName: "TZ",
+        company: "IBM",
+        location: "North Carolina , US",
+        ratePerHour: 60,
+        experience: 2,
+        img: "ibm",
+        bio: "I'm working at IBM as a full stack software engineer. Before he joined IBM, I cofounded a startup virtual reality (VR) video live streaming company. I was the main mobile developer for iOS. I am familiar with the whole software development cycle from design, development, test, to deployment. I am also proficient in many programming languages, such as C++, Java, Javascript/Typescript, and Objective-C.\n" +
+            "\n" +
+            "At IBM, I led user stories in many areas, from front end development of their product’s SaaS Web application, and Speech-To-Text training/integration.",
+        isa: true,
+        id: 14
+    }
 
 ];
 

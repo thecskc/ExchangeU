@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import MainCoach from "./components/MainCoach"
 
+import Footer from "./components/Footer"
 class App extends Component {
     constructor() {
         super();
@@ -23,6 +24,7 @@ class App extends Component {
                     <Coach path="/coaches"/>
                     <Form path="coaches/appointment-form/:coachId"/>
                 </Router>
+                <Footer/>
             </div>
         );
     }
