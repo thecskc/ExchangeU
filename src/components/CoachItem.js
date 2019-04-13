@@ -2,7 +2,18 @@ import React from "react";
 import { Link } from "@reach/router";
 
 import "./CoachItem.css";
-import profileImage from "../assets/user.png";
+
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => {
+    images[item.replace("./", "")] = r(item);
+  });
+  return images;
+}
+
+const images = importAll(
+  require.context("../assets/", false, /\.(png|jpe?g|svg)$/)
+);
 
 const fetaureTagStyles = {
   position: "absolute",
@@ -10,6 +21,7 @@ const fetaureTagStyles = {
   right: 0,
   marginRight: 12,
   marginTop: 12,
+  marginBottom: 24,
   background: "purple",
   color: "white",
   padding: 8
@@ -27,28 +39,59 @@ export default class CoachItem extends React.Component {
   handleClick() {}
 
   render() {
-    return (
-      <div className="card" style={{ position: "relative" }}>
-        <div style={fetaureTagStyles}>
-          <span>Featured ☆</span>
-        </div>
-        <img src={profileImage} style={{ margin: 16 }} alt="Avatar" />
-        <div className="container">
-          <h4>
-            <b>{this.props.name}</b>
-          </h4>
-          <p style={{ marginTop: 16 }}>Software Engineer</p>
-          <p>{this.props.company}</p>
-          <p> {`Experience of ${this.props.experience} years`}</p>
-          <p style={{ marginBottom: 16 }}>{`Charges ${
-            this.props.rate
-          }$ per hour`}</p>
+    let divElem;
+    let btnContainer;
+
+    if (this.props.isa) {
+      divElem = <div style={fetaureTagStyles}> Income Sharing Agreement ☆</div>;
+      btnContainer = (
+        <div className="btn-container">
           <Link to={`appointment-form/${this.props.id}`}>
             <button className="button" onClick={this.handleClick}>
-              <span>Book now </span>
+              <span>Book session </span>
+            </button>
+          </Link>
+          <a href={`https://forms.gle/E61JauWqFGAwaAiSA`}>
+            <button className="button" onClick={this.handleClick}>
+              <span>Apply for ISA </span>
+            </button>
+          </a>
+        </div>
+      );
+    } else {
+      divElem = <div />;
+      btnContainer = (
+        <div className="btn-container">
+          <Link to={`appointment-form/${this.props.id}`}>
+            <button className="button" onClick={this.handleClick}>
+              <span>Book session </span>
             </button>
           </Link>
         </div>
+      );
+    }
+
+    return (
+      <div className="card" style={{ position: "relative" }}>
+        {divElem}
+        <img
+          src={images[`${this.props.img}.png`]}
+          style={{ margin: 16, height: 64, width: 64, paddingTop: 16 }}
+          alt={this.props.img}
+        />
+
+        <h3>
+          <b>{this.props.firstName}</b>
+        </h3>
+        {/*<p style={{marginTop: 16}}>Software Engineer</p>*/}
+        <h5>{this.props.company}</h5>
+        <h5> {`${this.props.experience} year(s) of experience`}</h5>
+        <h4 style={{ marginBottom: 25 }}>{`Charges ${
+          this.props.ratePerHour
+        }$ per hour`}</h4>
+
+        <p className="bio">{this.props.bio}</p>
+        {btnContainer}
       </div>
     );
   }

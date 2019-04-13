@@ -1,25 +1,26 @@
 import React from "react";
+import {Link, Router} from "@reach/router";
 
 import "./Navbar.css";
+import Logo from "../assets/logo.jpg";
 
 class Navbar extends React.Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
+    constructor() {
+        super();
+        this.state = {};
+    }
 
-  render() {
-    return (
-      <div>
-        <nav>
-          <ul>
-            <li>>Home</li>
-            
-          </ul>
-        </nav>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="topnav" id="myTopnav">
+                <Link to="/">Home</Link>
+                <Link to="/coaches" className="active">Coaches</Link>
+
+                <img src={Logo} alt="Company logo"/>
+            </div>
+        );
+    }
+
 }
 
 export default Navbar;

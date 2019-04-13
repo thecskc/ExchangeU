@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import SweetAlert from "react-bootstrap-sweetalert";
+import CoachesData from "./CoachesData";
+import * as emailjs from "emailjs-com";
 
 import FormComponent from "./FormComponent";
 
@@ -13,7 +16,8 @@ class Form extends Component {
       firstName: "",
       lastName: "",
       email: "",
-      phoneNumber: undefined
+      phoneNumber: undefined,
+      confirmMessage: false
     };
   }
 
@@ -26,15 +30,64 @@ class Form extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    let aboutInst =  CoachesData.find(coach => coach.id == this.props.coachId)
+    let error=""
+    if(!this.state.firstName){
+      error = error + "Please add first name"
+    }else if(!this.state.lastName){
+      error = error + " Please add last name"
+    }else if(!this.state.email){
+      error= error+ " Please add email"
+    }
+    if(this.state.firstName && this.state.lastName && this.state.email){
+      var templateParams = {
+        from_name: `${this.state.firstName} ${this.state.lastName}`,
+        message_html: `Full Name: ${this.state.firstName} ${this.state.lastName}
+                       Email: ${this.state.email}
+
+                       Interested in Instructor : ${aboutInst.firstName}
+                       Rate : ${aboutInst.ratePerHour}
+
+                      `
+      };
+
+      emailjs.send('gmail', 'template_wemc9yXS', templateParams, 'user_8foUCAKzw9UdUezg0rnee')
+        .then(function(response) {
+           console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+           console.log('FAILED...', error);
+        });
+
+
+      this.setState({ confirmMessage: true });
+    }else{
+      if(error){
+        alert(error);
+      }
+    }
+
   }
+
+  hideAlert = () => {
+    this.setState({ confirmMessage: false });
+  };
 
   render() {
     return (
-      <FormComponent
-        {...this.state} // sending properties of state using spread operator
-        handleChange={this.handleChange}
-        handleSubmit={this.handleSubmit}
-      />
+      <div>
+        <FormComponent
+          {...this.state} // sending properties of state using spread operator
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+        />
+        {this.state.confirmMessage ? (
+          <SweetAlert title="Success" onConfirm={this.hideAlert}>
+            Your request has been submitted!
+          </SweetAlert>
+        ) : (
+          ""
+        )}
+      </div>
     );
   }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import CoachItem from "./CoachItem";
+import "./Coach.css";
 import CoachesData from "./CoachesData";
 
 class Coach extends Component {
@@ -12,16 +13,21 @@ class Coach extends Component {
 
   render() {
     const coachesComponents = CoachesData.map(coach => (
-      <CoachItem
-        key={coach.id}
-        name={coach.firstName}
-        company={coach.company}
-        experience={coach.experience}
-        rate={coach.ratePerHour}
-        id={coach.id}
-      />
+      <CoachItem key={coach.id} {...coach} />
     ));
-    return <div>{coachesComponents}</div>;
+
+
+    return (
+      <div style={{ marginTop: 16 }}>
+        <h1 style={{ textAlign: "center", marginBottom: 8 }}>
+          Browse our Coaches
+        </h1>
+
+        <div className="container">
+          {coachesComponents}
+        </div>
+      </div>
+    );
   }
 }
 
