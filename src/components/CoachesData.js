@@ -160,7 +160,7 @@ const CoachesData = [
         ratePerHour: 60,
         experience: 2,
         img: "ibm",
-        bio: "I'm working at IBM as a full stack software engineer. Before he joined IBM, I cofounded a startup virtual reality (VR) video live streaming company. I was the main mobile developer for iOS. I am familiar with the whole software development cycle from design, development, test, to deployment. I am also proficient in many programming languages, such as C++, Java, Javascript/Typescript, and Objective-C.\n" +
+        bio: "I'm working at IBM as a full stack software engineer. Before I joined IBM, I cofounded a startup virtual reality (VR) video live streaming company. I was the main mobile developer for iOS. I am familiar with the whole software development cycle from design, development, test, to deployment. I am also proficient in many programming languages, such as C++, Java, Javascript/Typescript, and Objective-C.\n" +
             "\n" +
             "At IBM, I led user stories in many areas, from front end development of their product’s SaaS Web application, and Speech-To-Text training/integration.",
         isa: true,

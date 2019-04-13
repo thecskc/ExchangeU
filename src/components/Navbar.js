@@ -14,8 +14,8 @@ class Navbar extends React.Component {
         return (
             <div className="topnav" id="myTopnav">
                 <Link to="/">Home</Link>
-                <Link to="/coaches" className="active">Coaches</Link>
-
+                <Link to="/coaches">Coaches</Link>
+                <Link to="/pricing">Pricing</Link>
                 <img src={Logo} alt="Company logo"/>
             </div>
         );

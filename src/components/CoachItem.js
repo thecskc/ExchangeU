@@ -43,7 +43,9 @@ export default class CoachItem extends React.Component {
     let btnContainer;
 
     if (this.props.isa) {
-      divElem = <div style={fetaureTagStyles}> Income Sharing Agreement ☆</div>;
+      divElem = <dfn data-info="This coach is open to Income Sharing Agreements. Apply for ISA to get
+      proposals from coaches. Each proposal has information on the duration of the training and the percentage of your first year salary they would take
+      if and only when you get a job. You can then accept or decline the proposal!" style={fetaureTagStyles}> Income Sharing Agreement</dfn>;
       btnContainer = (
         <div className="btn-container">
           <Link to={`appointment-form/${this.props.id}`}>
@@ -73,7 +75,7 @@ export default class CoachItem extends React.Component {
 
     return (
       <div className="card" style={{ position: "relative" }}>
-        {divElem}
+            {divElem}
         <img
           src={images[`${this.props.img}.png`]}
           style={{ margin: 16, height: 64, width: 64, paddingTop: 16 }}
@@ -84,7 +86,7 @@ export default class CoachItem extends React.Component {
           <b>{this.props.firstName}</b>
         </h3>
         {/*<p style={{marginTop: 16}}>Software Engineer</p>*/}
-        <h5>{this.props.company}</h5>
+        <h5>{this.props.company +" - "+this.props.location}</h5>
         <h5> {`${this.props.experience} year(s) of experience`}</h5>
         <h4 style={{ marginBottom: 25 }}>{`Charges ${
           this.props.ratePerHour

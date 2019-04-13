@@ -6,6 +6,7 @@ import Form from "./components/FormContainer";
 import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import MainCoach from "./components/MainCoach"
+import Pricing from "./components/Pricing"
 
 import Footer from "./components/Footer"
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
                 <Router>
                     <Landing path="/"/>
                     <Coach path="/coaches"/>
+                    <Pricing path="/pricing"/>
                     <Form path="coaches/appointment-form/:coachId"/>
                 </Router>
                 <Footer/>
