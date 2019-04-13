@@ -44,7 +44,7 @@ class Landing extends Component {
                         <h4>Browse through our coaches and choose one that you like!</h4>
                         <br/>
                         <p>
-                            Want a free introductory call with any of the coaches? Email us at
+                            Want a free 15-minute introductory call with any of the coaches or don't find the coach for your needs? Email us at
                             info@exchangetheapp.com
                         </p>
                     </div>
@@ -62,14 +62,13 @@ class Landing extends Component {
                             pay if and when you get a job!{" "}
                         </h4>
                         <p>
-                            Note - ISA payments are between 3%-7% of your first year salary
+                            Note - ISA payments are usually between 3%-7% of your first year salary
                             and vary by coach.
                         </p>
                         <br/>
 
                         <p>
-                            For more info about payment methods, email us at
-                            info@exchangetheapp.com
+                            For more info about payment methods check out <Link to="/pricing">the pricing page</Link>
                         </p>
                     </div>
                     <div className="landing-card">
