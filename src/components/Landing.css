@@ -2,6 +2,17 @@
     box-sizing: border-box;
 }
 
+
+
+h1{
+    opacity: 1;
+}
+
+h3{
+    opacity: 0.7;
+
+}
+
 .landing-container {
     display: flex;
     width: 100%;
@@ -11,45 +22,42 @@
     flex-direction: column;
 }
 
+
+
 .landing-hero {
     display: flex;
     width: 100%;
-    height: 60vh;
-    justify-content: center;
-    flex-direction: column;
-    background: #ff3019; /* Old browsers */
-    background: -moz-linear-gradient(
-            top,
-            #ff3019 0%,
-            #cf0404 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-            top,
-            #ff3019 0%,
-            #cf0404 100%
-    ); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(
-            to bottom,
-            #ff3019 0%,
-            #cf0404 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: row;
+    padding:32px;
     color: white;
+
+    background: #499bea; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #499bea 0%, #207ce5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #499bea 0%,#207ce5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #499bea 0%,#207ce5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.landing-hero-left{
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+
+
 }
 
-.landing-hero-item-header {
-    margin-left: 25%;
-    margin-right: 25%;
-    align-self: center;
-    opacity: 1;
-    display: inline;
+.landing-hero-right{
+
+    width:70%;
+    height: 100%;
+
+
 }
 
-.landing-hero-item-subheading {
-    margin-left: 25%;
-    margin-right: 25%;
-    align-self: center;
-    opacity: 0.8;
-}
 
 .landing-card-section {
     display: flex;
@@ -58,6 +66,7 @@
     background: rgba(223, 223, 223, 0.65);
     flex-wrap: wrap;
     padding-bottom: 32px;
+    align-items: center;
 }
 
 .btn-gradient {
@@ -188,12 +197,36 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+
+
+    .landing-hero{
+        align-items: center;
+        justify-content: center;
+
+    }
+    .landing-hero-left{
+        align-self: center;
+    }
+    .landing-hero-right{
+        display:none;
+    }
     .landing-testimonial-card{
         width: 100%;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .landing-hero{
+        align-items: center;
+        justify-content: center;
+
+    }
+    .landing-hero-left{
+        align-self: center;
+    }
+    .landing-hero-right{
+        display:none;
+    }
     .landing-testimonial-card{
         width:100%;
     }
