@@ -86,7 +86,7 @@ export default class CoachItem extends React.Component {
           <b>{this.props.firstName}</b>
         </h3>
         {/*<p style={{marginTop: 16}}>Software Engineer</p>*/}
-        <h5>{this.props.company}</h5>
+        <h5>{this.props.company +" - "+this.props.location}</h5>
         <h5> {`${this.props.experience} year(s) of experience`}</h5>
         <h4 style={{ marginBottom: 25 }}>{`Charges ${
           this.props.ratePerHour

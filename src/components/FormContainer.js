@@ -30,16 +30,21 @@ class Form extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    let aboutInst =  CoachesData.find(coach => coach.id == this.props.coachId)
-    let error=""
+    let aboutInst =  CoachesData.find(coach => coach.id == this.props.coachId);
+    let error="";
     if(!this.state.firstName){
-      error = error + "Please add first name"
-    }else if(!this.state.lastName){
-      error = error + " Please add last name"
-    }else if(!this.state.email){
-      error= error+ " Please add email"
+      error = error + " Please add first name."
     }
-    if(this.state.firstName && this.state.lastName && this.state.email){
+    if(!this.state.lastName){
+      error = error + " Please add last name."
+    }
+    if(!this.state.email){
+      error= error+ " Please add email."
+    }
+    if(!this.state.phoneNumber){
+      error= error + " Please add phone number.";
+    }
+    if(this.state.firstName && this.state.lastName && this.state.email && this.state.phoneNumber){
       var templateParams = {
         from_name: `${this.state.firstName} ${this.state.lastName}`,
         message_html: `Full Name: ${this.state.firstName} ${this.state.lastName}

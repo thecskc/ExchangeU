@@ -7,8 +7,9 @@ function FormComponent(props) {
     return (
         <div>
             <form id="form" onSubmit={props.handleSubmit}>
-                <h1 className="fs-title">Book an Appointment</h1>
-                {/* <h2 className="fs-subtitle"> John Doe</h2> */}
+                <h1 className="fs-title">Book a session</h1>
+
+                <h2 className="fs-subtitle"> The Exchange team will follow up with next steps!</h2>
                 <fieldset>
                     <input
                         type="text"
