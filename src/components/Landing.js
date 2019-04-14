@@ -22,10 +22,10 @@ class Landing extends Component {
                     <div className="landing-hero-left">
 
 
-                        <h1 style={{fontSize:"4.5vw"}}>Exchange</h1>
-                        <h3 style={{fontSize:"2.25vw", alignSelf:"center"}}>Personalized training for technical interviews by software engineers</h3>
+                        <h1 className="landing-heading">Exchange</h1>
+                        <h3 className="landing-subheading">Personalized training for technical interviews by software engineers</h3>
                         <br/><br/>
-                        <Link className="landing-button" to="/coaches">Browse Coaches</Link>
+                        <Link style={{alignSelf:"flex-start"}} className="landing-button" to="/coaches">Browse Coaches</Link>
 
 
                     </div>

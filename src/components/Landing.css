@@ -2,13 +2,6 @@
     box-sizing: border-box;
 }
 
-h1 {
-    opacity: 1;
-}
-
-h3 {
-    opacity: 0.7;
-}
 
 .landing-container {
     display: flex;
@@ -18,7 +11,7 @@ h3 {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    margin:0px;
+    margin: 0px;
 }
 
 .landing-hero {
@@ -45,14 +38,8 @@ h3 {
     justify-content: center;
     flex-direction: column;
 
-
 }
 
-.blob-section1{
-    width:100%;
-    height:100%;
-    background: url("../assets/blob-shape-landing.svg") no-repeat;
-}
 
 .landing-hero-right {
 
@@ -65,12 +52,12 @@ h3 {
     color: #fff !important;
     text-transform: uppercase;
     background: #eb144c; /* Old browsers */
-    padding: 20px;
+    padding: 3.5%;
     border-radius: 5px;
     display: inline-block;
     border: none;
     text-decoration: none;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .landing-button:hover {
@@ -90,6 +77,20 @@ h3 {
     flex-wrap: wrap;
     padding-bottom: 32px;
     align-items: center;
+}
+
+.landing-heading {
+    align-self: flex-start;
+    font-size: 3.5rem;
+    opacity:1;
+
+}
+
+.landing-subheading {
+    align-self: flex-start;
+    font-size: 1.75rem;
+    opacity:0.7;
+    line-height: 1.25;
 }
 
 .landing-card {
@@ -181,8 +182,14 @@ footer {
 
 @media screen and (max-width: 920px) {
 
-    .landing-hero-left {
-        background: none;
+    .landing-heading{
+        font-size: 2rem;
+    }
+    .landing-subheading{
+        font-size: 1.3rem;
+    }
+    .landing-button{
+        font-size: 1rem;
     }
 
     .landing-hero {
