@@ -46,7 +46,7 @@ h3{
     align-items: center;
     justify-content: center;
     flex-direction:column;
-
+    background: url("../assets/blob-shape-landing.svg");
 
 }
 
