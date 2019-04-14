@@ -18,10 +18,17 @@ class Landing extends Component {
 
                 <div className="landing-hero">
 
+
                     <div className="landing-hero-left">
+
+
                         <h1>Exchange</h1>
                         <h3>Personalized training for technical</h3>
                         <h3>interviews by software engineers</h3>
+                        <br/><br/>
+                        <Link className="landing-button" to="/coaches">Browse Coaches</Link>
+
+
                     </div>
 
 
@@ -161,7 +168,7 @@ class Landing extends Component {
                 </div>
 
                 <div className="landing-card-section">
-                    <h1 style={{marginTop:"16px"}}>How Does It Work?</h1>
+                    <h1 style={{marginTop: "16px"}}>How Does It Work?</h1>
 
                     <br/>
                     <br/>

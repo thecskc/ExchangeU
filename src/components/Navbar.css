@@ -1,6 +1,10 @@
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background: #499bea; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #499bea 0%, #207ce5 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #499bea 0%,#207ce5 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #499bea 0%,#207ce5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=1 );
   overflow: hidden;
   position: relative;
   width: 100%;

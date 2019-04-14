@@ -2,15 +2,12 @@
     box-sizing: border-box;
 }
 
-
-
-h1{
+h1 {
     opacity: 1;
 }
 
-h3{
+h3 {
     opacity: 0.7;
-
 }
 
 .landing-container {
@@ -20,9 +17,9 @@ h3{
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
+    margin:0px;
 }
-
-
 
 .landing-hero {
     display: flex;
@@ -30,34 +27,59 @@ h3{
     height: 100vh;
     justify-content: space-between;
     flex-direction: row;
-    padding:32px;
+    padding: 32px;
     color: white;
 
     background: #499bea; /* Old browsers */
     background: -moz-linear-gradient(-45deg, #499bea 0%, #207ce5 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #499bea 0%,#207ce5 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #499bea 0%,#207ce5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: -webkit-linear-gradient(-45deg, #499bea 0%, #207ce5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #499bea 0%, #207ce5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea', endColorstr='#207ce5', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 }
-.landing-hero-left{
-    width:50%;
-    height:100%;
-    display:flex;
+
+.landing-hero-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:column;
-    background: url("../assets/blob-shape-landing.svg");
+    flex-direction: column;
+
 
 }
 
-.landing-hero-right{
+.blob-section1{
+    width:100%;
+    height:100%;
+    background: url("../assets/blob-shape-landing.svg") no-repeat;
+}
 
-    width:70%;
+.landing-hero-right {
+
+    width: 70%;
     height: 100%;
 
-
 }
 
+.landing-button {
+    color: #fff !important;
+    text-transform: uppercase;
+    background: #eb144c; /* Old browsers */
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+}
+
+.landing-button:hover {
+    background: #434343;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px 10px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s;
+}
 
 .landing-card-section {
     display: flex;
@@ -67,44 +89,6 @@ h3{
     flex-wrap: wrap;
     padding-bottom: 32px;
     align-items: center;
-}
-
-.btn-gradient {
-    text-decoration: none;
-    color: #3d3d3d;
-    padding: 10px 30px;
-    display: inline-block;
-    position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.21);
-    border-bottom: 4px solid rgba(0, 0, 0, 0.21);
-    border-radius: 4px;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
-}
-
-.btn-gradient.large {
-    padding: 15px 45px;
-    font-size: 22px;
-}
-
-.btn-gradient.yellow {
-    background: rgba(240, 210, 100, 1);
-    background: -webkit-linear-gradient(
-            rgba(240, 210, 100, 1) 0%,
-            rgba(229, 201, 96, 1) 100%
-    );
-    background: -moz-linear-gradient(
-            rgba(240, 210, 100, 1) 0%,
-            rgba(229, 201, 96, 1) 100%
-    );
-    background: -o-linear-gradient(
-            rgba(240, 210, 100, 1) 0%,
-            rgba(229, 201, 96, 1) 100%
-    );
-    background: linear-gradient(
-            rgba(240, 210, 100, 1) 0%,
-            rgba(229, 201, 96, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0d264', endColorstr='#e5c960', GradientType=0);
 }
 
 .landing-card {
@@ -157,7 +141,7 @@ h3{
     align-items: center;
 }
 
-.landing-testimonials-cards-section{
+.landing-testimonials-cards-section {
     margin-top: 16px;
     padding-top: 32px;
     display: flex;
@@ -181,53 +165,40 @@ h3{
     text-align: center;
 }
 
-.landing-testimonial-card:hover{
+.landing-testimonial-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 footer {
     background-color: #3d3d3d;
     height: 100px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
+@media screen and (max-width: 920px) {
 
-@media screen and (max-width: 768px) {
+    .landing-hero-left {
+        background: none;
+    }
 
-
-
-    .landing-hero{
+    .landing-hero {
         align-items: center;
         justify-content: center;
 
     }
-    .landing-hero-left{
+
+    .landing-hero-left {
         align-self: center;
     }
-    .landing-hero-right{
-        display:none;
+
+    .landing-hero-right {
+        display: none;
     }
-    .landing-testimonial-card{
+
+    .landing-testimonial-card {
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .landing-hero{
-        align-items: center;
-        justify-content: center;
-
-    }
-    .landing-hero-left{
-        align-self: center;
-    }
-    .landing-hero-right{
-        display:none;
-    }
-    .landing-testimonial-card{
-        width:100%;
     }
 }
