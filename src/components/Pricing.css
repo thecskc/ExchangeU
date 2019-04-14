@@ -118,11 +118,13 @@ p{
 
     .pricing-card{
         width: 100%;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 480px) {
     .pricing-card{
         width:100%;
+        height: auto;
     }
 }
