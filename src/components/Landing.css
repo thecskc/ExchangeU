@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+.landing-heading {
+    align-self: flex-start;
+    font-size: 3.5rem;
+    opacity:1;
+
+}
+
+.landing-subheading {
+    align-self: flex-start;
+    font-size: 1.75rem;
+    opacity:0.7;
+    line-height: 1.5;
+}
+
+
 
 .landing-container {
     display: flex;
@@ -19,6 +34,7 @@
 
 }
 
+/* this is for the hero*/
 .landing-hero {
     display: flex;
     width: 100%;
@@ -74,33 +90,23 @@
     transition: all 0.4s ease 0s;
 }
 
+
+/*hero ends here*/
+
+/*this is the card section for steps*/
 .landing-card-section {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background: rgba(223, 223, 223, 0.65);
+    justify-content: space-evenly;
+    flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 32px;
+    padding-bottom: 16px;
     align-items: center;
+    margin:16px;
 }
 
-.landing-heading {
-    align-self: flex-start;
-    font-size: 3.5rem;
-    opacity:1;
-
-}
-
-.landing-subheading {
-    align-self: flex-start;
-    font-size: 1.75rem;
-    opacity:0.7;
-    line-height: 1.25;
-}
 
 .landing-card {
     /* Add shadows to create the "card" effect */
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,13 +118,16 @@
     min-width: 40vw;
     margin-top: 20px;
     background: white;
-    width: 80%;
+    width: 30%;
+    height: 45vh;
     align-self: center;
 }
 
 .landing-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
+/*end of card section*/
 
 .landing-blue-section {
     background: rgb(35, 125, 235);
@@ -187,6 +196,9 @@ footer {
 
 @media screen and (max-width: 920px) {
 
+    .landing-card{
+        width:100%;
+    }
     .landing-heading{
         font-size: 2rem;
     }

@@ -23,9 +23,11 @@ class Landing extends Component {
 
 
                         <h1 className="landing-heading">Exchange</h1>
-                        <h3 className="landing-subheading">Personalized training for technical interviews by software engineers</h3>
+                        <h3 className="landing-subheading">Personalized training for technical interviews by software
+                            engineers</h3>
                         <br/><br/>
-                        <Link style={{alignSelf:"flex-start"}} className="landing-button" to="/coaches">Browse Coaches</Link>
+                        <Link style={{alignSelf: "flex-start"}} className="landing-button" to="/coaches">Browse
+                            Coaches</Link>
 
 
                     </div>
@@ -166,53 +168,83 @@ class Landing extends Component {
 
                 </div>
 
-                <div className="landing-card-section">
+                <div className="landing-container">
                     <h1 style={{marginTop: "16px"}}>How Does It Work?</h1>
 
                     <br/>
                     <br/>
-                    <div className="landing-card">
-                        <h1>Step 1: Pick a coach</h1>
-                        <br/>
-                        <h4>Browse through our coaches and choose one that you like!</h4>
-                        <br/>
-                        <p>
-                            Want a free 15-minute introductory call with any of the coaches or don't find the coach for
-                            your needs? Email us at
-                            info@exchangetheapp.com
-                        </p>
-                    </div>
-                    <div className="landing-card">
-                        <h1>Step 2: Pick your payment plan</h1>
-                        <br/>
 
-                        <h4>
-                            Pay Per Session - Pick your coach, the number of sessions and pay
-                            their hourly rate!
-                        </h4>
-                        <br/>
-                        <h4>
-                            Income Sharing Agreement (ISA) - Apply to be trained for free and
-                            pay if and when you get a job!{" "}
-                        </h4>
-                        <p>
-                            Note - ISA payments are usually between 3%-7% of your first year salary
-                            and vary by coach.
-                        </p>
-                        <br/>
+                    <div className="landing-card-section">
 
-                        <p>
-                            For more info about payment methods check out <Link to="/pricing">the pricing page</Link>
-                        </p>
-                    </div>
-                    <div className="landing-card">
-                        <h1>Step 3: Start Your Training!</h1>
-                        <br/>
+                        <div className="landing-card">
 
-                        <h4>The Exchange team will contact you to set up your sessions!</h4>
-                        <br/>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                  version="1.1" x="0px" y="0px" viewBox="0 0 841.9 1488.25">
+                                <g>
+                                    <circle cx="331.5" cy="570.5" r="38.8"/>
+                                    <path
+                                        d="M285.7,985.7c0,12.1,9.8,21.7,21.7,21.7c12.1,0,21.8-9.8,21.8-21.7V803.1h9.6v182.5c0,12.1,9.8,21.7,21.7,21.7   c11.9,0,21.7-9.8,21.7-21.7l0.1-314.7h9.5v116c0,23.3,30.4,23.3,30.4,0V668.5c0-25.7-15.1-51-45.3-51H290   c-27.5,0-44.7,22.4-44.7,50.4v119.2c0,23.2,30.5,23.2,30.5,0V670.9h9.8L285.7,985.7z"/>
+                                </g>
+                                <g>
+                                    <path
+                                        d="M830.2,186.4H725.5c-6.4,0-11.6,5.2-11.6,11.6v19.2h-41.7c-6.4,0-11.6,5.2-11.6,11.6v192.7c-0.1,6.4,5.2,11.6,11.6,11.6   H714V451c0,6.4,5.2,11.6,11.6,11.6h104.6c6.4,0,11.6-5.2,11.6-11.6V198C841.8,191.6,836.6,186.4,830.2,186.4z"/>
+                                    <path
+                                        d="M151,184.3c-11.8-3.9-24.6,2.6-28.5,14.4l-0.7,2.2c-3.9,11.8,2.6,24.6,14.4,28.5l96.7,31.8l-206.2-0.2   c-14.6,0-26.6,11.9-26.6,26.6l0,2.8C0.1,305,12,317,26.6,317l133,0.1l-64.7,35.7c-0.1,0-0.1,0.1-0.2,0.1c-2.1,1.2-4,2.6-5.7,4.3   l-75.5,75.4c-0.1,0.1-0.2,0.2-0.4,0.4c-10,10.4-9.9,27,0.4,37.2c0.1,0.1,1.3,1.2,1.3,1.2c5,4.4,11.2,6.6,17.5,6.6   c5.8,0,11.7-1.9,16.5-5.8c0.1,0,0.1-0.1,0.2-0.1l73.7-60l86.3-24.5v74c0,4.6,1.2,9.1,3.5,13.1c0,0.1,0,0.1,0.1,0.2l38.2,66   c7.3,12.6,23.2,17,35.8,9.9c0,0,0.1,0,0.2-0.1l2.3-1.3c0,0,0.1,0,0.1,0c11.9-6.8,16.7-21.6,10.9-34.1c0,0,0,0,0,0L273,456.7v-58.5   c0-11.3,7.1-21.3,17.8-25.1c0.1,0,0.1,0,0.2-0.1l13.4-4.6c0,0,0.1,0,0.1,0c8.6-2.8,17.8-0.3,25.3,3.7c0,0,65.3,35.8,65.4,35.9   c10.8,6.6,12.4,21.6,6.6,32.7c0,0.1-0.1,0.1-0.1,0.2l-39.9,69.6c-6.4,12-0.9,31,10.3,38.6c0,0,2.8,1.8,2.8,1.8   c11,7.4,30.3,5.7,39-4.2c0.1-0.1,132.7-155.5,132.7-155.5h92V245.2H335.9L151,184.3z"/>
+                                </g>
+                                <text x="0" y="1205.6" fill="#000000" font-size="5px" font-weight="bold"
+                                      font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created
+                                    by Gilbert Bages
+                                </text>
+                                <text x="0" y="1210.6" fill="#000000" font-size="5px" font-weight="bold"
+                                      font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from
+                                    the Noun Project
+                                </text>
+                            </svg>
+
+                            <h1>Step 1: Pick a coach</h1>
+                            <br/>
+                            <h4>Browse through our coaches and choose one that you like!</h4>
+                            <br/>
+                            <p>
+                                Want a free 15-minute introductory call with any of the coaches or don't find the coach
+                                for
+                                your needs? Email us at
+                                info@exchangetheapp.com
+                            </p>
+                        </div>
+                        <div className="landing-card">
+                            <h1>Step 2: Pick your payment plan</h1>
+                            <br/>
+
+                            <h4>
+                                Pay Per Session - Pick your coach, the number of sessions and pay
+                                their hourly rate!
+                            </h4>
+                            <br/>
+                            <h4>
+                                Income Sharing Agreement (ISA) - Apply to be trained for free and
+                                pay if and when you get a job!{" "}
+                            </h4>
+
+                            <p>
+                                For more info about payment methods check out <Link to="/pricing">the pricing
+                                page</Link>
+                            </p>
+                        </div>
+                        <div className="landing-card">
+                            <h1>Step 3: Start Your Training!</h1>
+                            <br/>
+
+                            <h4>The Exchange team will contact you to set up your sessions!</h4>
+                            <br/>
+                        </div>
+
+
                     </div>
+
+
                 </div>
+
 
                 <div className="landing-blue-section">
                     <h1 className="landing-hero-item-header" style={{color: "white"}}>
