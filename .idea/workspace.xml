@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/components/Landing.css" line="4" />
+    <bookmark url="file://$PROJECT_DIR$/src/components/Landing.css" line="6" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ded8ecc-322d-4024-9e28-3e5b4b1108d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/Landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Landing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Landing.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -104,7 +103,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="3736" />
+          <entry key="css" value="3740" />
           <entry key="html" value="141" />
           <entry key="js" value="8503" />
           <entry key="svg" value="66" />
@@ -112,7 +111,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="3736" />
+          <entry key="CSS" value="3740" />
           <entry key="HTML" value="141" />
           <entry key="JavaScript" value="8503" />
           <entry key="SVG" value="66" />
@@ -158,8 +157,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Landing.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="191" column="23" selection-start-line="191" selection-start-column="23" selection-end-line="191" selection-end-column="23" />
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -360,12 +359,12 @@
       <workItem from="1554957534057" duration="8149000" />
       <workItem from="1555041521372" duration="16887000" />
       <workItem from="1555123674336" duration="9781000" />
-      <workItem from="1555184824525" duration="16097000" />
+      <workItem from="1555184824525" duration="16655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69431000" />
+    <option name="totallyTimeSpent" value="69989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -673,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Landing.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="191" column="23" selection-start-line="191" selection-start-column="23" selection-end-line="191" selection-end-column="23" />
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
