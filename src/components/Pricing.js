@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import "./Pricing.css"
 import "./CoachItem.css"
+import wallet from "../assets/wallet.svg";
 import cash from "../assets/cash.svg";
 import handshake from "../assets/handshake.svg";
 
@@ -16,8 +17,19 @@ class Pricing extends Component {
             <div className="pricing-container">
                 <br/>
                 <br/>
-                <h1 className="pricing-heading" style={{padding:"16px"}}>Pricing Details</h1>
-                <h3 className="pricing-subheading" style={{padding:"16px"}}>Choose one of these options while you browse through coaches!</h3>
+                <div className="upper-container">
+                  <div className="left">
+                    <h1 className="pricing-heading" style={{padding:"16px"}}>Pricing Details</h1>
+                    <h3 className="pricing-subheading" style={{padding:"16px"}}>Choose one of these options while you browse through coaches!</h3>
+                  </div>
+                  <div className="right">
+                    <img
+                      width="70%"
+                      src={wallet}
+                    />
+                  </div>
+                </div>
+
                 <br/>
                 <br/>
                 <div className="pricing-card-section">
