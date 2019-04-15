@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import "./Pricing.css"
 import "./CoachItem.css"
-
+import cash from "../assets/cash.svg";
+import handshake from "../assets/handshake.svg";
 
 class Pricing extends Component {
     constructor(props) {
@@ -21,26 +22,37 @@ class Pricing extends Component {
                 <br/>
                 <div className="pricing-card-section">
                     <div className="pricing-card">
-
+                        <img
+                          src={cash}
+                          alt="coach"
+                          style={{ width: 48, height: 48 }}
+                        />
                         <h2 className="pricing-heading">Pay-Per-Session</h2>
                         <h3 className="pricing-subheading">Choose the "Book session" option</h3>
                         <br/>
-                        <p>Each coach has their own hourly rate. Choose a coach and put in a booking request.
-                        Once this is done, the Exchange team will contact you with next steps</p>
+                        <p> - Each coach has their own hourly rate.</p>
+                        <p> - Choose a coach and put in a booking request. </p>
+                        <p> Once this is done, the Exchange team will contact you with next steps</p>
 
 
                     </div>
 
                     <div className="pricing-card">
+                        <img
+                          src={handshake}
+                          alt="coach"
+                          style={{ width: 48, height: 48 }}
+                        />
                         <h2 className="pricing-heading">Income Sharing Agreement (ISA)</h2>
                         <h3 className="pricing-subheading">Choose the "Apply for ISA" option</h3>
                         <br/>
                         <h4 className="pricing-subheading">Free training from Exchange coaches. You only pay if and when you get a job!</h4>
                         <br/>
-                        <p>Once you apply, coaches review your profile and send you proposals that contain
+                        <p> - Once you apply, coaches review your profile and send you proposals that contain
                         the duration of your training, the percentage of your first year salary they wish to take, and other relevant
-                        information. You can then decide whether or not to accept the proposal! The Exchange team will guide you in this process
-                        </p>
+                        information.  </p>
+                        <p> - You can then decide whether or not to accept the proposal!</p>
+                        <p>The Exchange team will guide you in this process</p>
 
                     </div>
 
