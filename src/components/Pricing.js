@@ -24,7 +24,7 @@ class Pricing extends Component {
                   </div>
                   <div className="right">
                     <img
-                      width="70%"
+                      width="100%"
                       src={wallet}
                     />
                   </div>
