@@ -469,7 +469,7 @@ class Landing extends Component {
                                 his interview. He was able to understand that I lagged in topics
                                 like DP and Graphs. So we spent a lot of time working on those
                                 areas. Now, I feel confident about my onsite interview in two
-                                weeks! Daniel’s Exchange
+                                weeks! 
                             </p>
                         </div>
                     </div>
