@@ -239,6 +239,10 @@ footer {
 /* ======== BREAK POINTS ========= */
 
 @media screen and (max-width: 920px) {
+
+  #particles-header{
+    display:none;
+  }
   .landing-hero{
       height: 85vh;
       padding: 0px 32px;

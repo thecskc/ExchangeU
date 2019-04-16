@@ -7,6 +7,7 @@ import pickCoachLogo from "../assets/choose.svg";
 import paymentLogo from "../assets/payment.svg";
 import trainingLogo from "../assets/training.svg";
 import OneOnOneTraining from "../assets/oneonone.svg";
+import Particles from "react-particles-js";
 
 class Landing extends Component {
     constructor(props) {
@@ -18,8 +19,28 @@ class Landing extends Component {
     render() {
         return (
             <div className="landing-container">
-                <div className="landing-hero">
+                <div id="particles-js" className="landing-hero">
+                    <Particles id="particles-header" params={{
+                        "particles": {
+                            "number": {
+                                "value": 25
+                            },
+                            "size": {
+                                "value": 3
+                            }
+                        },
+                        "interactivity": {
+                            "events": {
+                                "onhover": {
+                                    "enable": true,
+                                    "mode": "repulse"
+                                }
+                            }
+                        }
+                    }} style={{position: "absolute", width: "100%", height: "100%"}}/>
                     <div className="landing-hero-left">
+
+
                         <h1 className="landing-heading">Exchange</h1>
                         <h3 className="landing-subheading">
                             Personalized training for technical interviews by software
@@ -346,8 +367,9 @@ class Landing extends Component {
                             className="landing-hero-item-subheading"
                             style={{color: "white"}}
                         >
-                            Training is one on one and entirely personalized to your needs. Your coach will get on a free introductory call
-                            to assess your strengths and needs  
+                            Training is one on one and entirely personalized to your needs. Your coach will get on a
+                            free introductory call
+                            to assess your strengths and needs
                         </h3>
                         <br/>
                         <h3
