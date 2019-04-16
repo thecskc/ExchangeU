@@ -178,8 +178,17 @@ p{
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 75px 32px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-blue-left{
+  width: 50%;
+}
+.landing-blue-right{
+  width:50%;
 }
 
 .landing-testimonials {
@@ -239,6 +248,13 @@ footer {
     width: 100%
   }
 
+  .landing-blue-left{
+    width:100%;
+
+  }
+  .landing-blue-right{
+    display:none;
+  }
   .landing-card {
     width: 100%;
       height: auto;

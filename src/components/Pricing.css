@@ -10,7 +10,21 @@ p{
     flex-wrap: wrap;
     justify-content: center;
     width:100%;
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
 
+}
+
+.pricing-banner-heading{
+    opacity: 1;
+    font-size: 3.5rem;
+    display: inline;
+}
+
+.pricing-banner-subheading{
+    opacity: 0.7;
+    font-size: 1.75rem;
+    display: inline;
 }
 
 .pricing-heading{
@@ -62,103 +76,79 @@ p{
     width: 45%;
     align-self: center;
     height:55vh;
+    align-items: flex-start;
 }
 
 .pricing-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-
-.pricing-card-header{
+/* this is for the hero*/
+.pricing-hero {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 32px;
     color: white;
-    justify-content: center;
-    height:40%;
-    width:100%;
-}
 
-.pricing-card-header .blue{
-    background: rgb(35, 125, 235);
-    background: -webkit-linear-gradient(
-            160deg,
-            rgb(10, 60, 180) 0%,
-            rgb(35, 125, 235) 100%
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-            160deg,
-            rgb(10, 60, 180) 0%,
-            rgb(35, 125, 235) 100%
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-.pricing-card-header .red{
-    background: #ff3019; /* Old browsers */
+    background: #499bea; /* Old browsers */
     background: -moz-linear-gradient(
-            top,
-            #ff3019 0%,
-            #cf0404 100%
+            -45deg,
+            #499bea 0%,
+            #207ce5 100%
     ); /* FF3.6-15 */
     background: -webkit-linear-gradient(
-            top,
-            #ff3019 0%,
-            #cf0404 100%
+            -45deg,
+            #499bea 0%,
+            #207ce5 100%
     ); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
-            to bottom,
-            #ff3019 0%,
-            #cf0404 100%
+            135deg,
+            #499bea 0%,
+            #207ce5 100%
     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    color: white;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea', endColorstr='#207ce5', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 }
 
-.upper-container{
-  display: flex;
-  flex-direction: row;
-  padding: 0px 30px;
-  align-items: center;
-  justify-content: space-between;
+.pricing-hero-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    align-self:flex-start;
 }
 
-.left{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
+.pricing-hero-right {
+    width: 70%;
+    height: 100%;
+    align-self:flex-end;
 }
 
-.right{
-  width: 50%;
-  height: 100%;
-}
 
-@media screen and (max-width: 768px) {
-
-    .pricing-card{
-        width: 100%;
-        height: auto;
-    }
-
-    .left{
-      width: 100%;
-    }
-
-    .right{
-      display: none;
-    }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 920px){
     .pricing-card{
         width:100%;
         height: auto;
     }
 
-    .left{
-      width: 100%;
+    .pricing-hero-left{
+        width: 100%;
     }
 
-    .right{
-      display: none;
+    .pricing-hero-right{
+        display: none;
     }
+
+    .pricing-heading {
+        font-size: 2rem;
+    }
+    .pricing-subheading {
+        font-size: 1.3rem;
+    }
+
 }
+
