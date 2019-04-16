@@ -64,7 +64,7 @@ p{
   height: 100vh;
   justify-content: space-between;
   flex-direction: row;
-  padding: 32px;
+  /* padding: 32px; */
   color: white;
 
   background: #499bea; /* Old browsers */
@@ -89,6 +89,7 @@ p{
 .landing-hero-left {
   width: 50%;
   height: 100%;
+  padding: 0px 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,6 +99,7 @@ p{
 .landing-hero-right {
   width: 70%;
   height: 100%;
+  padding: 0px 32px;
 }
 
 .landing-button {
