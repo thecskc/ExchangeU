@@ -247,7 +247,7 @@ footer {
   }
   .landing-hero{
       height: 85vh;
-      padding: 0px 32px;
+      /* padding: 0px 32px; */
   }
 
   .landing-hero-left{
