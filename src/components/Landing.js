@@ -19,25 +19,10 @@ class Landing extends Component {
     render() {
         return (
             <div className="landing-container">
-                <div id="particles-js" className="landing-hero">
-                    <Particles id="particles-header" params={{
-                        "particles": {
-                            "number": {
-                                "value": 25
-                            },
-                            "size": {
-                                "value": 3
-                            }
-                        },
-                        "interactivity": {
-                            "events": {
-                                "onhover": {
-                                    "enable": true,
-                                    "mode": "repulse"
-                                }
-                            }
-                        }
-                    }} style={{position: "absolute", width: "100%", height: "100%"}}/>
+                <div className="landing-hero">
+
+
+
                     <div className="landing-hero-left">
 
 
