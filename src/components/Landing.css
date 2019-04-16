@@ -1,313 +1,294 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans");
 
-html,
-body {
-
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-
+h1{
+  font-weight: inherit;
+  line-height: 1.5;
 }
 
-h1 {
-    font-weight: inherit;
-    line-height: 1.5;
+h2{
+  line-height: 1.618;
+  font-weight: 300;
 }
 
-h2 {
-    line-height: 1.618;
-    font-weight: 300;
+h3{
+  line-height: 1.618;
+  font-weight: 400;
 }
 
-h3 {
-    line-height: 1.618;
-    font-weight: 400;
+
+h4{
+  line-height: 1.618;
+  font-weight: 200;
 }
 
-h4 {
-    line-height: 1.618;
-    font-weight: 200;
+p{
+  font-size: 0.9em;
 }
 
-p {
-    font-size: 0.9em;
-}
+
 
 * {
-    box-sizing: border-box;
-}
-
-#particles-header {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  box-sizing: border-box;
 }
 
 .landing-heading {
-    align-self: flex-start;
-    font-size: 3.5rem;
-    opacity: 1;
+  align-self: flex-start;
+  font-size: 3.5rem;
+  opacity: 1;
 
 }
 
 .landing-subheading {
-    align-self: flex-start;
-    font-size: 1.75rem;
-    opacity: 0.7;
+  align-self: flex-start;
+  font-size: 1.75rem;
+  opacity: 0.7;
 
 }
 
 .landing-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px;
-    font-family: "Open Sans", sans-serif;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* this is for the hero*/
 .landing-hero {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 32px;
-    color: white;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+  flex-direction: row;
+  /* padding: 32px; */
+  color: white;
 
-    background: #499bea; /* Old browsers */
-    background: -moz-linear-gradient(
-            -45deg,
-            #499bea 0%,
-            #207ce5 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-            -45deg,
-            #499bea 0%,
-            #207ce5 100%
-    ); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(
-            135deg,
-            #499bea 0%,
-            #207ce5 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea', endColorstr='#207ce5', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+  background: #499bea; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    #499bea 0%,
+    #207ce5 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #499bea 0%,
+    #207ce5 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #499bea 0%,
+    #207ce5 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea', endColorstr='#207ce5', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 }
 
 .landing-hero-left {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  width: 50%;
+  height: 100%;
+  padding: 0px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .landing-hero-right {
-    width: 70%;
-    height: 100%;
+  width: 70%;
+  height: 100%;
+  padding: 0px 32px;
 }
 
 .landing-button {
-    color: #fff !important;
-    text-transform: uppercase;
-    background: #FF8361; /* Old browsers */
-    padding: 3.5%;
-    border-radius: 5px;
-    display: inline-block;
-    border: none;
-    text-decoration: none;
-    font-size: 1rem;
+  color: #fff !important;
+  text-transform: uppercase;
+  background: #FF8361; /* Old browsers */
+  padding: 3.5%;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 .landing-button:hover {
-    background: #434343;
-    letter-spacing: 1px;
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-    box-shadow: 5px 40px 10px rgba(0, 0, 0, 0.57);
-    transition: all 0.4s ease 0s;
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px 10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }
 
 /*hero ends here*/
 
 /*this is the card section for steps*/
 .landing-card-section {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-bottom: 16px;
-    align-items: center;
-    margin: 16px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+  align-items: center;
+  margin: 16px;
 }
 
 .landing-card {
-    /* Add shadows to create the "card" effect */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    text-align: center;
-    border-radius: 20px;
-    padding: 5vh 2vw;
-    min-width: 40vw;
-    margin-top: 20px;
-    background: white;
-    width: 30%;
-    height: 45vh;
-    align-self: center;
-    align-items: center;
+  /* Add shadows to create the "card" effect */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5vh 2vw;
+  min-width: 40vw;
+  margin-top: 20px;
+  background: white;
+  width: 30%;
+  height: 45vh;
+  align-self: center;
+  align-items: center;
 
 }
 
 .landing-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*end of card section*/
 
 .choose-coach {
-    background: url("../assets/choose.svg");
+  background: url("../assets/choose.svg");
 }
 
 .landing-blue-section {
-    background: rgb(35, 125, 235);
-    background: -webkit-linear-gradient(
-            160deg,
-            rgb(10, 60, 180) 0%,
-            rgb(35, 125, 235) 100%
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-            160deg,
-            rgb(10, 60, 180) 0%,
-            rgb(35, 125, 235) 100%
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 75px 32px;
-    display: flex;
-    flex-direction: row;
-    color: white;
-    justify-content: space-between;
-    align-items: center;
+  background: rgb(35, 125, 235);
+  background: -webkit-linear-gradient(
+    160deg,
+    rgb(10, 60, 180) 0%,
+    rgb(35, 125, 235) 100%
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    160deg,
+    rgb(10, 60, 180) 0%,
+    rgb(35, 125, 235) 100%
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 75px 32px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.landing-blue-left {
-    width: 50%;
+.landing-blue-left{
+  width: 50%;
 }
-
-.landing-blue-right {
-    width: 50%;
+.landing-blue-right{
+  width:50%;
 }
 
 .landing-testimonials {
-    display: flex;
-    background: rgba(223, 223, 223, 0.65);
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 24px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  background: rgba(223, 223, 223, 0.65);
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing-testimonials-cards-section {
-    margin-top: 16px;
-    padding-top: 32px;
-    display: flex;
+  margin-top: 16px;
+  padding-top: 32px;
+  display: flex;
 
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .landing-testimonial-card {
-    justify-content: center;
-    background: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    height: auto;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    width: 40%;
-    padding: 5vh 2vw;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
+  justify-content: center;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 40%;
+  padding: 5vh 2vw;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
 
 .landing-testimonial-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 footer {
-    background-color: #3d3d3d;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #3d3d3d;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 /* ======== BREAK POINTS ========= */
 
 @media screen and (max-width: 920px) {
 
-    #particles-header {
-        display: none;
-    }
+  #particles-header{
+    display:none;
+  }
+  .landing-hero{
+      height: 85vh;
+      padding: 0px 32px;
+  }
 
-    .landing-hero {
-        height: 85vh;
-        padding: 0px 32px;
-    }
+  .landing-hero-left{
+    width: 100%
+  }
 
-    .landing-hero-left {
-        width: 100%
-    }
+  .landing-blue-left{
+    width:100%;
 
-    .landing-blue-left {
-        width: 100%;
+  }
+  .landing-blue-right{
+    display:none;
+  }
+  .landing-card {
+    width: 100%;
+      height: auto;
+  }
+  .landing-heading {
+    font-size: 2rem;
+  }
+  .landing-subheading {
+    font-size: 1.3rem;
+  }
+  .landing-button {
+    font-size: 1rem;
+  }
 
-    }
+  .landing-hero {
+    align-items: center;
+    justify-content: center;
+  }
 
-    .landing-blue-right {
-        display: none;
-    }
+  .landing-hero-left {
+    align-self: center;
+  }
 
-    .landing-card {
-        width: 100%;
-        height: auto;
-    }
+  .landing-hero-right {
+    display: none;
+  }
 
-    .landing-heading {
-        font-size: 2rem;
-    }
-
-    .landing-subheading {
-        font-size: 1.3rem;
-    }
-
-    .landing-button {
-        font-size: 1rem;
-    }
-
-    .landing-hero {
-        align-items: center;
-        justify-content: center;
-    }
-
-    .landing-hero-left {
-        align-self: center;
-    }
-
-    .landing-hero-right {
-        display: none;
-    }
-
-    .landing-testimonial-card {
-        width: 100%;
-    }
+  .landing-testimonial-card {
+    width: 100%;
+  }
 }
