@@ -367,6 +367,13 @@ class Landing extends Component {
                             skills.
                         </h3>
                         <br/>
+                        <h3
+                            className="landing-hero-item-subheading"
+                            style={{flexWrap: "wrap", alignSelf: "center"}}
+                        >
+                           They will also aid in your job search and help you better your projects and resumes.
+                        </h3>
+                        <br/>
                     </div>
 
                     <div className="landing-blue-right">
@@ -396,6 +403,14 @@ class Landing extends Component {
                         <div className="landing-testimonial-card">
                             <h3>Mo's Exchange</h3>
                             <br/>
+                            <div>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                            </div>
+                            <br/>
 
                             <p>
                                 Overall I found my Exchange experience very helpful and
@@ -408,6 +423,14 @@ class Landing extends Component {
                         </div>
                         <div className="landing-testimonial-card">
                             <h3>Jev's Exchange</h3>
+                            <br/>
+                            <div>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                            </div>
                             <br/>
                             <p>
                                 I would give my coach a 4.75/5. He was very good at making sure
@@ -422,6 +445,14 @@ class Landing extends Component {
                         <div className="landing-testimonial-card">
                             <h3>Hsiang's Exchange</h3>
                             <br/>
+                            <div>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                            </div>
+                            <br/>
                             <p>
                                 My coach was very attentive to what I needed. I really needed
                                 some extra resources to prepare for my upcoming interviews, so I
@@ -434,19 +465,17 @@ class Landing extends Component {
                                 Exchange helped alot with that.
                             </p>
                         </div>
-                        <div className="landing-testimonial-card">
-                            <h3>Moon's Exchange</h3>
-                            <br/>
-                            <br/>
-                            <p>
-                                I read a lot of books such as CTCI but I was not able to get to
-                                the level needed to solve some hard Leetcode problems. I met
-                                with my coach over a month and I am now able to handle the hard
-                                Leetcode problems much better than I was able to before.
-                            </p>
-                        </div>
+
                         <div className="landing-testimonial-card">
                             <h3>Daniel's Exchange</h3>
+                            <br/>
+                            <div>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                            </div>
                             <br/>
                             <p>
                                 My 3 sessions with my technical interview coach Kim were great!
@@ -455,6 +484,26 @@ class Landing extends Component {
                                 like DP and Graphs. So we spent a lot of time working on those
                                 areas. Now, I feel confident about my onsite interview in two
                                 weeks! 
+                            </p>
+
+                        </div>
+
+                        <div className="landing-testimonial-card">
+                            <h3>Moon's Exchange</h3>
+                            <br/>
+                            <div>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star checked"/>
+                                <span className="fa fa-star"/>
+                            </div>
+                            <br/>
+                            <p>
+                                I read a lot of books such as CTCI but I was not able to get to
+                                the level needed to solve some hard Leetcode problems. I met
+                                with my coach over a month and I am now able to handle the hard
+                                Leetcode problems much better than I was able to before.
                             </p>
                         </div>
                     </div>

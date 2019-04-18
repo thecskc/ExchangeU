@@ -9,6 +9,9 @@ body {
     padding: 0px;
 
 }
+.checked {
+    color: orange;
+}
 
 h1 {
     font-weight: inherit;

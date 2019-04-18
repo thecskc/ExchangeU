@@ -1,7 +1,4 @@
 
-p{
-
-}
 
 
 .pricing-container{
@@ -22,8 +19,8 @@ p{
 }
 
 .pricing-banner-subheading{
-    opacity: 0.7;
-    font-size: 1.75rem;
+    opacity: 0.8;
+    font-size: 1.6rem;
     display: inline;
 }
 
@@ -31,12 +28,23 @@ p{
     /* align-self: center; */
     opacity: 1;
     display: inline;
+    font-size: 1.75rem;
 }
 
 .pricing-subheading{
     /* align-self: center; */
-    opacity: 0.7;
+    opacity: 0.8;
     display: inline;
+    font-size: 1.5rem;
+}
+
+.pricing-text-padding{
+    padding:32px;
+}
+.pricing-description{
+    opacity:0.8;
+    font-size:1.1rem;
+    line-height: 2;
 }
 
 .pricing-card-section{
@@ -128,7 +136,60 @@ p{
     align-self:flex-end;
 }
 
+.pricing-details-section {
 
+    padding: 75px 32px;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing-details-40{
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pricing-details-50{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.pricing-details-60{
+    width: 60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.pricing-details-80 {
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pricing-details-20 {
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.enlarge-small{
+
+}
+
+.disappear-small{
+
+}
 @media screen and (max-width: 920px){
     .pricing-card{
         width:100%;
@@ -148,6 +209,17 @@ p{
     }
     .pricing-subheading {
         font-size: 1.3rem;
+    }
+
+    .enlarge-small{
+        width: 100%;
+    }
+    .disappear-small{
+        display:none;
+    }
+
+    .pricing-text-padding{
+        padding: 0px;
     }
 
 }
