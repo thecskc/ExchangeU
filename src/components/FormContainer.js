@@ -49,6 +49,8 @@ class Form extends Component {
         from_name: `${this.state.firstName} ${this.state.lastName}`,
         message_html: `Full Name: ${this.state.firstName} ${this.state.lastName}
                        Email: ${this.state.email}
+                       Phone Number: ${this.state.phoneNumber}
+    
 
                        Interested in Instructor : ${aboutInst.firstName}
                        Rate : ${aboutInst.ratePerHour}
