@@ -56,7 +56,6 @@ class Landing extends Component {
     getStars(numberOfStars){
       let starJSX = [];
       for(let i=0; i<numberOfStars ; i++){
-
           starJSX.push(
             <span className="fa fa-star checked"/>
           )
@@ -89,11 +88,19 @@ class Landing extends Component {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
             initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 1
           }
         },
         {
@@ -492,8 +499,8 @@ class Landing extends Component {
                           {
                               reviews.map((slideItem) => (
                                   <div key={slideItem.id} className="landing-testimonial-card">
-                                      <h3 style={{marginBottom:"20px"}}>{slideItem.name}'s review</h3>
-                                      <p  style={{marginBottom:"20px"}}>{slideItem.review}</p>
+                                      <p  className="para">{slideItem.review}</p>
+                                      <h3 style={{marginBottom:"20px"}}>- {slideItem.name}</h3>
                                       {this.getStars(slideItem.star)}
                                   </div>
                               ))
