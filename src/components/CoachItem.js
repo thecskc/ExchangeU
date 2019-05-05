@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "@reach/router";
+import Popover from 'react-simple-popover';
 
 import "./CoachItem.css";
 
@@ -31,14 +32,24 @@ export default class CoachItem extends React.Component {
   constructor(props) {
     super();
 
-    this.state = {};
+    this.state = {
+      open : false
+    };
 
-    this.handleClick = this.handleClick.bind(this);
+
   }
 
-  handleClick() {}
+  handleClick(e) {
+     this.setState({open: !this.state.open});
+   }
+
+   handleClose(e) {
+     this.setState({open: false});
+   }
 
   render() {
+    const { anchorEl } = this.state;
+    const open = Boolean(anchorEl);
     let divElem;
     let btnContainer;
 
@@ -82,7 +93,12 @@ export default class CoachItem extends React.Component {
     }
 
     return (
-      <div className="card" style={{ position: "relative" }}>
+
+      <div
+
+
+        className="card" style={{ position: "relative" }}
+      >
         {divElem}
         <img
           src={images[`${this.props.img}.svg`]}
@@ -94,14 +110,29 @@ export default class CoachItem extends React.Component {
           <b>{this.props.firstName}</b>
         </h3>
         {/*<p style={{marginTop: 16}}>Software Engineer</p>*/}
-        <h5>{this.props.company + " - " + this.props.location}</h5>
+        <h5>{this.props.location}</h5>
+        <p
+          href="#"
+          ref="target"
+          onMouseEnter={this.handleClick.bind(this)}
+          onMouseLeave={this.handleClose.bind(this)}
+          >{this.props.bio.substring(0,100)}...</p>
         <h5> {`${this.props.experience} year(s) of experience`}</h5>
-        <h4 style={{ marginBottom: 25 }}>{`Charges ${
-          this.props.ratePerHour
-        }$ per hour`}</h4>
 
-        <p className="bio">{this.props.bio}</p>
         {btnContainer}
+
+        <h4 style={{ marginTop: 25 , float:"right"}}><b>${this.props.ratePerHour}/hr</b></h4>
+
+        <Popover
+          placement='top'
+          style={{width:"400px"}}
+          container={this}
+          target={this.refs.target}
+          show={this.state.open}
+          onHide={this.handleClose.bind(this)} >
+          <p>{this.props.bio}</p>
+        </Popover>
+
       </div>
     );
   }
