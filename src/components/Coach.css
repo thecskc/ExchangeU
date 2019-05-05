@@ -1,9 +1,72 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans");
 
+.upperContainer{
+  background: linear-gradient(135deg,#499bea 0%,#207ce5 100%);
+  display: flex;
+}
+
+.left{
+  width: 50%;
+  margin: auto;
+}
+
+.right{
+  text-align: center;
+  width: 35%;
+  margin: auto;
+  padding: 20px;
+  background: white;
+}
+
+.select:{
+  width: 90%
+}
+
+.radio{
+  display: flex;
+  flex-direction: row !important
+}
+
+.landing-button {
+  color: #fff !important;
+  text-transform: uppercase;
+  background: #FF8361; /* Old browsers */
+  padding: 3.5%;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.landing-button:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px 10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
 .container {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 16px auto 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .upperContainer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+
+  .left {
+    display: none;
+  }
+  .right{
+    width: 90%
+  }
 }
