@@ -144,13 +144,9 @@ const CoachesData = [
         id: 12,
         isa: true,
         img: "google",
-        bio:
-            'Hi I am Di Wang, pronounced as "The One" in English. I have been working at Google for almost 3 years and currently active interviewer for onsite candidates, while I have been in the industry for almost 9 years.  \n' +
-            "\n" +
-            "During my career I have experienced varieties of interviews at varieties of companies. Some of them invited me for a 1:1 session with their CTO after onsite, and treated me with a nice dinner of course ; )  Some of them interviewed me for roles from hands-on engineer to VP in one single onsite day. And some of them just asked me to implement a mobile game and bring to their office, play with their engineering team members.   \n" +
-            "\n" +
-            "I have been helping candidates with tech interviews on schedule in a few weeks, or sometimes in a few days to improve, and get their offers."
-    },
+        bio: "Hi, I have been interviewing onsite candidates at Google for more than 3 years. I am good at helping mentees to master the core of general coding interviews, making groundbreaking progress in a short time and acquire big package offers. I offer trainings in C++, Java, Go, Javascript and Python3."
+
+     },
     {
         firstName: "HV",
         company: "Amazon",
