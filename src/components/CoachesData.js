@@ -1,5 +1,18 @@
 const CoachesData = [
     {
+     
+        firstName: "Jeff",
+        company: "Goldman Sachs",
+        location: "New York, US",
+        ratePerHour: 90,
+        experience: 4,
+        img: "goldman_sachs",
+        bio: "I am a software engineer with over 4 years of experience. I have worked in a variety of roles including full stack and big data engineering. I currently conduct interviews at my company on a weekly basis and have a strong understanding on what this industry is looking for.",
+        isa: true,
+        id: 16
+        
+    },
+    {
         firstName: "Kyle",
         company: "Bloomberg",
         location: "New York, US",
