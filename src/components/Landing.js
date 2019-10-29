@@ -51,6 +51,7 @@ class Landing extends Component {
         super(props);
 
         this.state = {};
+      this.onCTAClick = this.onCTAClick.bind(this);
     }
 
     getStars(numberOfStars){
@@ -69,6 +70,11 @@ class Landing extends Component {
       }
       return starJSX;
     }
+  
+   onCTAClick(event){
+     event.preventDefault();
+     window.location.href="https://train.exchangetrain.com";
+   }
 
     render() {
       var settings = {
@@ -128,13 +134,13 @@ class Landing extends Component {
                         </h3>
                         <br/>
                         <br/>
-                        <Link
+                        <button
                             style={{alignSelf: "flex-start"}}
                             className="landing-button"
-                            to="https://train.exchangetrain.com"
+                            onClick={this.onCTAClick}
                         >
                             Get Started
-                        </Link>
+                        </button>
                     </div>
 
                     <svg
