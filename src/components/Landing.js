@@ -131,9 +131,9 @@ class Landing extends Component {
                         <Link
                             style={{alignSelf: "flex-start"}}
                             className="landing-button"
-                            to="/coaches"
+                            to="https://train.exchangetrain.com"
                         >
-                            Browse Coaches
+                            Get Started
                         </Link>
                     </div>
 
