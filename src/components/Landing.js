@@ -73,7 +73,7 @@ class Landing extends Component {
   
    onCTAClick(event){
      event.preventDefault();
-     window.location.href="https://train.exchangetrain.com";
+     window.location.href="/coaches";
    }
 
     render() {
