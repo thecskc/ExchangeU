@@ -73,7 +73,7 @@ class Landing extends Component {
   
    onCTAClick(event){
      event.preventDefault();
-     window.location.href="/coaches";
+     window.location.href="https://train.exchangetrain.com";
    }
 
     render() {
@@ -134,13 +134,13 @@ class Landing extends Component {
                         </h3>
                         <br/>
                         <br/>
-                        <button
+                        <Link
                             style={{alignSelf: "flex-start"}}
                             className="landing-button"
-                            onClick={this.onCTAClick}
+                            to="/coaches"
                         >
                             Get Started
-                        </button>
+                        </Link>
                     </div>
 
                     <svg
